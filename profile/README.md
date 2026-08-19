@@ -74,7 +74,7 @@ TidyFactor Organization (github.com/TidyFactor)
 
 | Category | Repository | Track / Focus | Agent Skill | NPM Package |
 | :--- | :--- | :--- | :--- | :--- |
-| **Design** | [**`TidyFactor/Cinematic`**](https://github.com/TidyFactor/Cinematic) | Scroll-driven luxury landing pages (Apple × Cartier) | `tidyfactor-cinematic` | [`@alwkala/tidyfactor-cinematic`](https://www.npmjs.com/package/@alwkala/tidyfactor-cinematic) |
+| **Design** | [**`TidyFactor/Cinematic`**](https://github.com/TidyFactor/Cinematic) | Scroll-driven luxury landing pages (Apple × Cartier) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
 | **Design** | [**`TidyFactor/Design`**](https://github.com/TidyFactor/Design) | Interactive code-native UI design lifecycle engine | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
 | **Design** | [**`TidyFactor/Styler`**](https://github.com/TidyFactor/Styler) | Framework styler, section redesign & RTL polish | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
 | **Development** | [**`TidyFactor/Next`**](https://github.com/TidyFactor/Next) | Multi-tenant SaaS, Postgres RLS & Dev-Perf engine | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
