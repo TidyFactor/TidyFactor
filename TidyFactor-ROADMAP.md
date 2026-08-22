@@ -34,8 +34,8 @@ Every skill is designed around **three core invariants**:
 | **`tidyfactor-html`** | Content-first static web platforms & semantic SEO foundations | 12 | Semantic HTML5, Vanilla CSS, JSON metadata | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) | **v1.1.0** (Aug 2026) | 🟡 Active Dev |
 | **`tidyfactor-js`** | Framework-free single-page applications & micro-apps | 14 | Vanilla JS ES Modules, Router, Store | [`@alwkala/tidyfactor-js`](https://www.npmjs.com/package/@alwkala/tidyfactor-js) | **v1.1.0** (Sep 2026) | 🟡 Active Dev |
 | **`tidyfactor-php`** | Full-stack server-rendered web applications & component layouts | 12 | PHP 8.x, Flight, Medoo, Plates, SQLite | [`@alwkala/tidyfactor-php`](https://www.npmjs.com/package/@alwkala/tidyfactor-php) | **v1.2.0** (Oct 2026) | 🔵 Planned |
-| **`tidyfactor-php-kernel`** | Domain-agnostic modular monolith kernel & module registry | 10 | Flight, Medoo, Modular Monolith, Kernel API | [`@alwkala/tidyfactor-php-kernel`](https://www.npmjs.com/package/@alwkala/tidyfactor-php-kernel) | **v1.0.0** (Aug 2026) | 🟢 Production Ready |
 | **`tidyfactor-htmx`** | Server-driven hypermedia interactivity & dynamic UI updates | 10 | htmx, Server Endpoints, Micro-HTML | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) | **v1.2.0** (Nov 2026) | 🔵 Planned |
+
 
 
 ---

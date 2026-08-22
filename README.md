@@ -82,10 +82,10 @@ TidyFactor Organization (github.com/TidyFactor)
 | **Development** | `tidyfactor-htmx` | `npx @alwkala/tidyfactor-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
 | **Development** | `tidyfactor-js` | `npx @alwkala/tidyfactor-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
 | **Development** | `tidyfactor-php` | `npx @alwkala/tidyfactor-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
-| **Development** | `tidyfactor-php-kernel` | `npx @alwkala/tidyfactor-php-kernel add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP-Kernel/releases/latest/download/tidyfactor-php-kernel.skill) |
 | **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
 > 📦 **TidyFactor Skills Suite Bundle**: Prefer downloading all skills at once? [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+
 
 
 ---
