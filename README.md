@@ -36,7 +36,7 @@ TidyFactor Organization (github.com/TidyFactor)
 │   └── Skill-Architect → Master Governance  (8 Structural Rules, Dispatcher Discipline & Quality Gate)
 │
 ├── 🎨 Design Skills
-│   ├── Cinematic       → Experience / "Wow" (Apple × Cartier Scroll-Driven Landing Pages)
+│   ├── Cinematic       → Experience / "Wow" (Scroll-Driven Landing Pages Animations)
 │   ├── Design          → Prototype / "Build"(Code-Native UI Design Engine & Figma Alternative)
 │   └── Styler          → Production / "Ship"(Framework Styler & RTL Polish Engine)
 │
