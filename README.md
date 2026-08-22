@@ -32,20 +32,26 @@ The traditional web stack was designed exclusively for humans writing code. The 
 ```
 TidyFactor Organization (github.com/TidyFactor)
 │
-├── 🎨 Design Skills
-│   ├── Cinematic    → Experience / "Wow"     (Apple × Cartier Scroll-Driven Landing Pages)
-│   ├── Design       → Prototype / "Build"    (Code-Native UI Design Engine & Figma Alternative)
-│   └── Styler       → Production / "Ship"    (Framework Styler & RTL Polish Engine)
+├── 🏛️ Governance
+│   └── Skill-Architect → Master Governance  (8 Structural Rules, Dispatcher Discipline & Quality Gate)
 │
-├── ⚡ Development Skills
-│   ├── HTML         → Content & Static       (Semantic SEO & Static Platform Starter)
-│   ├── HTMX         → Hypermedia             (Server-Driven Micro-Interactions)
-│   ├── JS           → Vanilla SPA            (Framework-Free Reactive ES Modules)
-│   ├── PHP          → Server-Rendered        (Modern PHP 8.x Component UI & Architecture)
-│   └── Next         → Multi-Tenant SaaS      (Next.js 16, React 19, Supabase RLS & Dev-Perf)
+├── 🎨 Design Skills
+│   ├── Cinematic       → Experience / "Wow" (Apple × Cartier Scroll-Driven Landing Pages)
+│   ├── Design          → Prototype / "Build"(Code-Native UI Design Engine & Figma Alternative)
+│   └── Styler          → Production / "Ship"(Framework Styler & RTL Polish Engine)
+│
+├── ⚡ Core Engineering & Development Skills
+│   ├── HTML            → Static Platform    (Semantic SEO & 100/100 Lighthouse Starter)
+│   ├── HTMX            → Hypermedia         (Server-Driven Micro-Interactions)
+│   ├── JS              → Vanilla SPA        (Framework-Free Reactive ES Modules)
+│   ├── PHP             → Server-Rendered    (Modern PHP 8.x Component Monolith)
+│   └── Next            → Multi-Tenant SaaS  (Next.js 16, React 19, Supabase RLS & Dev-Perf)
+│
+├── 📚 Documentation Skills
+│   └── Doc             → AST Engine         (Codebase Interview, Living Docs & Docsify Builder)
 │
 └── 📈 Growth Skills
-    └── Marketing    → Growth / Revenue       (Direct Response, Pillar SEO & Content Lifecycles)
+    └── Marketing       → Direct Response    (Campaigns, Pillar SEO & Content Lifecycles)
 ```
 
 ---
@@ -76,12 +82,12 @@ TidyFactor Organization (github.com/TidyFactor)
 | **Design** | `tidyfactor-cinematic` | `npx @alwkala/create-cinematic-kit add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Cinematic/releases/latest/download/tidyfactor-cinematic.skill) |
 | **Design** | `tidyfactor-design` | `npx @alwkala/tidyfactor-design add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Design/releases/latest/download/tidyfactor-design.skill) |
 | **Design** | `tidyfactor-styler` | `npx @alwkala/tidyfactor-styler add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Styler/releases/latest/download/tidyfactor-styler.skill) |
-| **Development** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
-| **Development** | `tidyfactor-next` | `npx @alwkala/tidyfactor-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
-| **Development** | `tidyfactor-html` | `npx @alwkala/tidyfactor-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
-| **Development** | `tidyfactor-htmx` | `npx @alwkala/tidyfactor-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
-| **Development** | `tidyfactor-js` | `npx @alwkala/tidyfactor-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
-| **Development** | `tidyfactor-php` | `npx @alwkala/tidyfactor-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
+| **Engineering** | `tidyfactor-html` | `npx @alwkala/tidyfactor-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
+| **Engineering** | `tidyfactor-next` | `npx @alwkala/tidyfactor-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
+| **Engineering** | `tidyfactor-htmx` | `npx @alwkala/tidyfactor-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
+| **Engineering** | `tidyfactor-js` | `npx @alwkala/tidyfactor-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
+| **Engineering** | `tidyfactor-php` | `npx @alwkala/tidyfactor-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
+| **Documentation** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
 | **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
 > 📦 **TidyFactor Skills Suite Bundle**: Prefer downloading all skills at once? [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
