@@ -70,20 +70,23 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ---
 
-## 📦 Official Repositories & Community Packages
+| Category | Skill Identifier | Quick CLI Installation | Direct Download (.skill) |
+| :--- | :--- | :--- | :---: |
+| **Governance** | `tidyfactor-skill-architect` | `npx @alwkala/tidyfactor-skill-architect add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Skill-Architect/releases/latest/download/tidyfactor-skill-architect.skill) |
+| **Design** | `tidyfactor-cinematic` | `npx @alwkala/create-cinematic-kit add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Cinematic/releases/latest/download/tidyfactor-cinematic.skill) |
+| **Design** | `tidyfactor-design` | `npx @alwkala/tidyfactor-design add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Design/releases/latest/download/tidyfactor-design.skill) |
+| **Design** | `tidyfactor-styler` | `npx @alwkala/tidyfactor-styler add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Styler/releases/latest/download/tidyfactor-styler.skill) |
+| **Development** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
+| **Development** | `tidyfactor-next` | `npx @alwkala/tidyfactor-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
+| **Development** | `tidyfactor-html` | `npx @alwkala/tidyfactor-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
+| **Development** | `tidyfactor-htmx` | `npx @alwkala/tidyfactor-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
+| **Development** | `tidyfactor-js` | `npx @alwkala/tidyfactor-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
+| **Development** | `tidyfactor-php` | `npx @alwkala/tidyfactor-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
+| **Development** | `tidyfactor-php-kernel` | `npx @alwkala/tidyfactor-php-kernel add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP-Kernel/releases/latest/download/tidyfactor-php-kernel.skill) |
+| **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
-| Category | Repository | Track / Focus | Agent Skill | NPM Package |
-| :--- | :--- | :--- | :--- | :--- |
-| **Design** | [**`TidyFactor/Cinematic`**](https://github.com/TidyFactor/Cinematic) | Scroll-driven luxury landing pages (Apple × Cartier) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
-| **Design** | [**`TidyFactor/Design`**](https://github.com/TidyFactor/Design) | Interactive code-native UI design lifecycle engine | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
-| **Design** | [**`TidyFactor/Styler`**](https://github.com/TidyFactor/Styler) | Framework styler, section redesign & RTL polish | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
-| **Development** | [**`TidyFactor/Doc`**](https://github.com/TidyFactor/Doc) | Codebase interview, API specs & Docsify engine | `tidyfactor-doc` | [`@alwkala/tidyfactor-doc`](https://www.npmjs.com/package/@alwkala/tidyfactor-doc) |
-| **Development** | [**`TidyFactor/Next`**](https://github.com/TidyFactor/Next) | Multi-tenant SaaS, Postgres RLS & Dev-Perf engine | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
-| **Development** | [**`TidyFactor/HTML`**](https://github.com/TidyFactor/HTML) | Content-first static platforms & semantic SEO | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
-| **Development** | [**`TidyFactor/HTMX`**](https://github.com/TidyFactor/HTMX) | Server-driven hypermedia & micro-HTML endpoints | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |
-| **Development** | [**`TidyFactor/JS`**](https://github.com/TidyFactor/JS) | Framework-free reactive ES Modules & vanilla SPA | `tidyfactor-js` | [`@alwkala/tidyfactor-js`](https://www.npmjs.com/package/@alwkala/tidyfactor-js) |
-| **Development** | [**`TidyFactor/PHP`**](https://github.com/TidyFactor/PHP) | Modern server-rendered PHP 8.x architecture & UI | `tidyfactor-php` | [`@alwkala/tidyfactor-php`](https://www.npmjs.com/package/@alwkala/tidyfactor-php) |
-| **Growth** | [**`TidyFactor/Marketing`**](https://github.com/TidyFactor/Marketing) | Direct-response copywriting, SEO clusters & CRO | `tidyfactor-marketing` | [`@alwkala/tidyfactor-marketing`](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing) |
+> 📦 **TidyFactor Skills Suite Bundle**: Prefer downloading all skills at once? [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+
 
 ---
 

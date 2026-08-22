@@ -2,7 +2,14 @@
 
 # TidyFactor Vision
 
-> **Building the next generation of AI-native web platforms.**
+> **Why ?**
+Architecture should reduce complexity instead of creating it.
+
+> **What we want ?**
+
+
+
+We prioritize **sustainable architecture** over fast results.
 
 ---
 
