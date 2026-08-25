@@ -1,6 +1,6 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.1.0",
+  "suite_version": "1.1.1",
   "release_date": "2026-08-25",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
@@ -79,7 +79,7 @@
     {
       "id": "tidyfactor-styler",
       "name": "TidyFactor Styler",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "TidyFactor Styler \u2014 Production Framework Styler, Section Redesign & RTL Polish Engine",
       "archive": "tidyfactor-styler.skill"
     }
