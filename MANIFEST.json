@@ -1,6 +1,6 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.1.1",
+  "suite_version": "1.2.0",
   "release_date": "2026-08-25",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
@@ -8,44 +8,44 @@
   "skills": [
     {
       "id": "tidyfactor-cinematic",
-      "name": "tidyfactor-cinematic",
-      "version": "3.4.0",
+      "name": "TidyFactor Cinematic",
+      "version": "3.5.0",
       "description": "TidyFactor Cinematic \u2014 Scroll-Driven Luxury Experience Engine \u2014 Apple \u00d7 Cartier Aesthetic for AI Agents",
       "archive": "tidyfactor-cinematic.skill"
     },
     {
       "id": "tidyfactor-design",
-      "name": "tidyfactor-design",
-      "version": "1.3.9",
-      "description": "TidyFactor Design \u2014 Interactive Code-Native UI Design Lifecycle Engine \u2014 Production-Grade Figma Alternative",
+      "name": "TidyFactor Design",
+      "version": "1.4.0",
+      "description": "TidyFactor Design track \u2014 code-native UI design lifecycle engine (Figma alternative) with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-design.skill"
     },
     {
       "id": "tidyfactor-doc",
       "name": "TidyFactor Doc",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "description": "TidyFactor Doc \u2014 Code Documentation Builder & Dual-Engine Publishing Platform (MkDocs Material & Docsify) for AI Coding Agents",
       "archive": "tidyfactor-doc.skill"
     },
     {
       "id": "tidyfactor-html",
-      "name": "tidyfactor-html",
-      "version": "1.0.0",
-      "description": "TidyFactor HTML \u2014 Content-First Static Platform & Semantic SEO Architecture Engine",
+      "name": "TidyFactor HTML",
+      "version": "1.1.0",
+      "description": "TidyFactor HTML track \u2014 100% static HTML/CSS/JS platform starter with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-html.skill"
     },
     {
       "id": "tidyfactor-htmx",
-      "name": "tidyfactor-htmx",
-      "version": "1.0.0",
-      "description": "TidyFactor HTMX \u2014 Server-Driven Hypermedia Interactivity & Modern Micro-HTML Architecture",
+      "name": "TidyFactor HTMX",
+      "version": "1.1.0",
+      "description": "TidyFactor HTMX track \u2014 Server-Driven Hypermedia Interactivity with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-htmx.skill"
     },
     {
       "id": "tidyfactor-js",
-      "name": "tidyfactor-js",
-      "version": "1.0.0",
-      "description": "TidyFactor JS \u2014 Framework-Free Reactive ES Modules & Vanilla Single Page Application Engine",
+      "name": "TidyFactor JS",
+      "version": "1.1.0",
+      "description": "TidyFactor Vanilla JS track \u2014 Framework-Free Reactive Vanilla SPA with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-js.skill"
     },
     {
@@ -57,22 +57,22 @@
     },
     {
       "id": "tidyfactor-next",
-      "name": "tidyfactor-next",
-      "version": "1.1.0",
-      "description": "TidyFactor Next \u2014 Production-Grade Multi-Tenant SaaS Architecture & Development Performance Engine",
+      "name": "TidyFactor Next.js",
+      "version": "1.2.0",
+      "description": "TidyFactor Next.js track \u2014 production-grade multi-tenant SaaS on Next.js 16, React 19, TypeScript strict, and Supabase with CDL Contextual Decision Layer",
       "archive": "tidyfactor-next.skill"
     },
     {
       "id": "tidyfactor-php",
-      "name": "tidyfactor-php",
-      "version": "1.0.0",
-      "description": "TidyFactor PHP \u2014 Modern Server-Rendered PHP 8.x Architecture & Component UI Engine",
+      "name": "TidyFactor PHP",
+      "version": "1.1.0",
+      "description": "TidyFactor PHP Mono track \u2014 Modern Server-Rendered Modular Monolith (Flight + Medoo + Plates) with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-php.skill"
     },
     {
       "id": "tidyfactor-skill-architect",
       "name": "TidyFactor Skill Architect",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "TidyFactor Skill Architect \u2014 Governance Layer & Methodology Engine for AI Coding Agent Skills",
       "archive": "tidyfactor-skill-architect.skill"
     },
