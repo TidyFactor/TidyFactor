@@ -50,9 +50,9 @@
     },
     {
       "id": "tidyfactor-marketing",
-      "name": "tidyfactor-marketing",
-      "version": "1.0.0",
-      "description": "TidyFactor Marketing \u2014 AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine",
+      "name": "TidyFactor Marketing",
+      "version": "1.1.0",
+      "description": "TidyFactor Marketing \u2014 AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-marketing.skill"
     },
     {
