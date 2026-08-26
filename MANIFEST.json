@@ -1,7 +1,7 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.2.0",
-  "release_date": "2026-08-25",
+  "suite_version": "1.3.0",
+  "release_date": "2026-08-27",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
   "skills_count": 11,
@@ -51,14 +51,14 @@
     {
       "id": "tidyfactor-marketing",
       "name": "TidyFactor Marketing",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "TidyFactor Marketing \u2014 AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-marketing.skill"
     },
     {
       "id": "tidyfactor-next",
       "name": "TidyFactor Next.js",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "description": "TidyFactor Next.js track \u2014 production-grade multi-tenant SaaS on Next.js 16, React 19, TypeScript strict, and Supabase with CDL Contextual Decision Layer",
       "archive": "tidyfactor-next.skill"
     },
@@ -72,7 +72,7 @@
     {
       "id": "tidyfactor-skill-architect",
       "name": "TidyFactor Skill Architect",
-      "version": "1.1.1",
+      "version": "2.1.0",
       "description": "TidyFactor Skill Architect \u2014 Governance Layer & Methodology Engine for AI Coding Agent Skills",
       "archive": "tidyfactor-skill-architect.skill"
     },
