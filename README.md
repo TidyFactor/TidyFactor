@@ -13,6 +13,12 @@
 
 [🌐 Official Website](https://tidyfactor.com/) • [📚 Documentation](https://tidyfactor.com/documentation) • [🤝 Partner (Alwkala)](https://alwkala.com/) • [🏛️ Vision](VISION.md) • [💬 WhatsApp](https://wa.me/201016656899)
 
+<br/><br/>
+
+<p align="center">
+  <img src="assets/hero-banner.png" alt="TidyFactor Architecture Ecosystem Hero Banner" width="100%" />
+</p>
+
 </div>
 
 ---
