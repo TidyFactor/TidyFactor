@@ -1,10 +1,10 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.3.0",
-  "release_date": "2026-08-27",
+  "suite_version": "1.4.0",
+  "release_date": "2026-08-29",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
-  "skills_count": 11,
+  "skills_count": 12,
   "skills": [
     {
       "id": "tidyfactor-cinematic",
@@ -26,6 +26,13 @@
       "version": "1.2.1",
       "description": "TidyFactor Doc \u2014 Code Documentation Builder & Dual-Engine Publishing Platform (MkDocs Material & Docsify) for AI Coding Agents",
       "archive": "tidyfactor-doc.skill"
+    },
+    {
+      "id": "tidyfactor-github",
+      "name": "TidyFactor GitHub",
+      "version": "1.0.0",
+      "description": "TidyFactor GitHub \u2014 GitHub Platform Operations, Governance, Content, Experience & Intelligence Engine for AI Coding Agents",
+      "archive": "tidyfactor-github.skill"
     },
     {
       "id": "tidyfactor-html",
