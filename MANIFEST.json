@@ -1,6 +1,6 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.4.0",
+  "suite_version": "1.4.1",
   "release_date": "2026-08-29",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
@@ -30,7 +30,7 @@
     {
       "id": "tidyfactor-github",
       "name": "TidyFactor GitHub",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "TidyFactor GitHub \u2014 GitHub Platform Operations, Governance, Content, Experience & Intelligence Engine for AI Coding Agents",
       "archive": "tidyfactor-github.skill"
     },
