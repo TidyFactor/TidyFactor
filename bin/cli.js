@@ -16,7 +16,7 @@ const os = require('os');
 const { execSync } = require('child_process');
 const readline = require('readline');
 
-const VERSION = '1.5.1';
+const VERSION = '1.6.0';
 const REGISTRY_HOST = process.env.TIDYFACTOR_REGISTRY_HOST || 'tidyfactor.com';
 const REGISTRY_API_PATH = '/api/v1/skills';
 
@@ -237,19 +237,16 @@ function promptQuestion(query) {
   }));
 }
 
-// ─── Install a Specific Skill with Flattening ─────────────────────
+// ─── Install a Specific Skill with Dual-Channel Fallback ───────────
 async function installSingleSkill(skillId, targetLocations) {
   let cleanId = skillId.replace(/^@alwkala\//, '');
   if (!cleanId.startsWith('tidyfactor-') && COMMUNITY_SKILLS.some(s => s.id === `tidyfactor-${cleanId}`)) {
     cleanId = `tidyfactor-${cleanId}`;
   }
 
-  const tempSkillZip = path.join(os.tmpdir(), `tf_${cleanId}_${Date.now()}.zip`);
-  const downloadUrl = `https://${REGISTRY_HOST}/downloads/skills/${cleanId}.skill`;
+  process.stdout.write(`  ⏳ Installing ${color.bold(cleanId)}... `);
 
-  process.stdout.write(`  ⏳ Downloading ${color.bold(cleanId)}... `);
-
-  // Check if available locally in Skills-LAB first (Fast Developer Workstation Mode)
+  // Strategy 1: Local Workspace Fast-Path (Development Workstation Mode)
   let localSkillDir = path.resolve(__dirname, '..', '..', cleanId);
   if (!fs.existsSync(localSkillDir)) {
     localSkillDir = path.resolve(__dirname, '..', cleanId);
@@ -261,21 +258,47 @@ async function installSingleSkill(skillId, targetLocations) {
       fs.mkdirSync(dest, { recursive: true });
       copyDirRecursive(localSkillDir, dest);
     }
-    console.log(`${color.green('✔')} ${color.dim('(Local sync)')}`);
+    console.log(`${color.green('✔')} ${color.dim('(Local fast-sync)')}`);
     return true;
   }
+
+  // Strategy 2 (Primary Network): Official NPM / NPX Package Runner
+  let npmSuccess = false;
+  try {
+    execSync(`npx -y @alwkala/${cleanId} add-skill`, { stdio: 'ignore', timeout: 20000 });
+    
+    // Check where it installed and sync to all other selected targets
+    const defaultWorkspaceDir = path.join(process.cwd(), '.agents', 'skills', cleanId);
+    if (fs.existsSync(defaultWorkspaceDir) && fs.existsSync(path.join(defaultWorkspaceDir, 'SKILL.md'))) {
+      for (const targetDir of targetLocations) {
+        const dest = path.join(targetDir, cleanId);
+        if (dest !== defaultWorkspaceDir) {
+          fs.mkdirSync(dest, { recursive: true });
+          copyDirRecursive(defaultWorkspaceDir, dest);
+        }
+      }
+      npmSuccess = true;
+      console.log(`${color.green('✔')} ${color.cyan('[NPM Registry]')}`);
+      return true;
+    }
+  } catch (_) {
+    npmSuccess = false;
+  }
+
+  // Strategy 3 (Secondary Fallback): Direct CDN Download & Native Extraction
+  const tempSkillZip = path.join(os.tmpdir(), `tf_${cleanId}_${Date.now()}.zip`);
+  const downloadUrl = `https://${REGISTRY_HOST}/downloads/skills/${cleanId}.skill`;
 
   try {
     await downloadFile(downloadUrl, tempSkillZip);
     
-    // Extract into each target location
     for (const targetDir of targetLocations) {
       const dest = path.join(targetDir, cleanId);
       fs.mkdirSync(dest, { recursive: true });
       const ok = extractArchiveNative(tempSkillZip, dest);
-      if (!ok) throw new Error('Native extraction failed');
+      if (!ok) throw new Error('Native archive extraction failed');
 
-      // Auto-flatten if archive contained a nested root folder
+      // Auto-flatten nested root folder if present
       const nested = path.join(dest, cleanId);
       if (fs.existsSync(nested) && fs.existsSync(path.join(nested, 'SKILL.md'))) {
         const items = fs.readdirSync(nested);
@@ -296,19 +319,12 @@ async function installSingleSkill(skillId, targetLocations) {
     }
 
     if (fs.existsSync(tempSkillZip)) fs.unlinkSync(tempSkillZip);
-    console.log(`${color.green('✔ Installed & Mounted')}`);
+    console.log(`${color.green('✔')} ${color.dim('[Direct CDN Fallback]')}`);
     return true;
   } catch (err) {
     if (fs.existsSync(tempSkillZip)) fs.unlinkSync(tempSkillZip);
-    console.log(`${color.yellow('⚠ NPM fallback...')}`);
-    try {
-      execSync(`npx -y @alwkala/${cleanId} add-skill`, { stdio: 'ignore' });
-      console.log(`  ${color.green('✔')} ${cleanId} installed via NPM.`);
-      return true;
-    } catch (_) {
-      console.log(`  ${color.red('✖')} Failed: ${err.message}`);
-      return false;
-    }
+    console.log(`${color.red('✖ Failed:')} ${err.message}`);
+    return false;
   }
 }
 

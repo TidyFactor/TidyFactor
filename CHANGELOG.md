@@ -1,5 +1,23 @@
 # CHANGELOG — TidyFactor Skills Suite
 
+## TidyFactor Skills Suite v1.6.0
+
+Official major feature release introducing Dual-Redundant Fallback Architecture (NPX Primary ➔ Direct Website CDN Fallback ➔ Local Fast-Path), comprehensive 10+ AI Agent target mounting, 5 official workflow packs, and multi-platform standalone installers.
+
+### 🌟 Release Highlights (v1.6.0)
+- **Dual-Redundant Installation Architecture**:
+  - **Strategy 1 (Local Fast-Path)**: Zero-millisecond local workspace sync if developing within the TidyFactor monorepo.
+  - **Strategy 2 (Primary Network)**: Executes official NPM runner (`npx -y @alwkala/<skill> add-skill`) leveraging NPM's global CDN and cache.
+  - **Strategy 3 (Secondary Fallback)**: Automated seamless fallback to self-hosted binary CDN (`https://tidyfactor.com/downloads/skills/<skill>.skill`) with native OS unzipping & root flattening.
+- **Unified Multi-Agent Sync**: Unpacked skills are automatically mirrored to all user-selected IDE agent environments (`.agents/skills/`, `.cursor/skills/`, `.claude/skills/`, `.windsurf/skills/`, `.cline/skills/`, and `~/.gemini/config/skills/`).
+- **Standalone Shell Installers for Linux/macOS & Windows**:
+  - `curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash` (POSIX Bash with `/dev/tty` support & multi-tool extraction fallback).
+  - `irm https://tidyfactor.com/api/v1/install.ps1 | iex` (Pure ASCII PowerShell 5.1/7+ execution).
+- **Curated Workflow Packs**: Full support for `pack:design`, `pack:saas`, `pack:engineering`, `pack:governance`, and `pack:growth`.
+- **Live Self-Hosted REST Endpoints**: `/api/v1/packs` and `/api/v1/skills/search`.
+
+---
+
 ## TidyFactor Skills Suite v1.5.1
 
 Official omni-channel release introducing native multi-platform standalone installers (Linux, macOS, Windows), 10+ AI Agent IDE discovery & mounting matrix, 5 curated workflow packs, and self-hosted API endpoints.
