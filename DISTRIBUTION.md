@@ -55,22 +55,35 @@ npx @alwkala/tidyfactor doctor
 
 For automated CI/CD pipelines, container environments, and developers without Node.js:
 
-### Linux / macOS (cURL & Bash)
+### Linux & macOS (cURL & Bash)
 ```bash
-# Install Master Suite (all 12 skills)
+# Launch interactive 3-step installer
 curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash
+
+# Install a specific pack
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- pack:design
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- pack:saas
 
 # Install a specific skill
 curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- tidyfactor-cinematic
+
+# Install entire Master Suite (all 12 skills)
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- all
 ```
 
 ### Windows (PowerShell)
 ```powershell
-# Install Master Suite (all 12 skills)
+# Launch interactive 3-step installer
 irm https://tidyfactor.com/api/v1/install.ps1 | iex
 
+# Install a specific pack
+$Skill = 'pack:design'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
+
 # Install a specific skill
-irm https://tidyfactor.com/api/v1/install.ps1 | iex -Skill tidyfactor-cinematic
+$Skill = 'tidyfactor-cinematic'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
+
+# Install entire Master Suite (all 12 skills)
+$Skill = 'all'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 ```
 
 ---

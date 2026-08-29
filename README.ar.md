@@ -108,13 +108,17 @@ npx @alwkala/tidyfactor add tidyfactor-cinematic
 npx @alwkala/tidyfactor add tidyfactor-styler --cursor
 ```
 
-### 2. سكربتات التثبيت السريعة بسطر واحد (Linux / macOS / Windows)
+### 2. سكربتات التثبيت السريعة بسطر واحد (Linux, macOS, Windows — بدون Node.js)
 ```bash
-# أنظمة Linux / macOS (cURL & Bash)
+# أنظمة Linux و macOS (cURL & Bash)
 curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- pack:design
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- all
 
 # أنظمة Windows (PowerShell)
 irm https://tidyfactor.com/api/v1/install.ps1 | iex
+$Skill = 'pack:design'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
+$Skill = 'all'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 ```
 
 > 📖 **المستند الفني الكامل لبنية واستراتيجية التوزيع:** [DISTRIBUTION.md](DISTRIBUTION.md)
