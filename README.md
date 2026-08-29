@@ -98,10 +98,36 @@ TidyFactor Organization (github.com/TidyFactor)
 | **Documentation** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
 | **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
-> 📦 **TidyFactor Skills Suite Bundle**: Prefer downloading all skills at once? [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+> 📦 **TidyFactor Master Skills Suite (.zip)**: [⬇️ Download Direct from TidyFactor Hub](https://tidyfactor.com/downloads/tidyfactor-skills-suite.zip) | [GitHub Mirror](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
 
+---
 
+## ⚡ Independent Multi-Platform Installation (No GitHub Dependency)
 
+TidyFactor provides direct, automated oneliners and a central CLI package for zero-friction distribution:
+
+### 1. Central CLI (NPX / NPM)
+```bash
+# List all registered skills
+npx @alwkala/tidyfactor list
+
+# Install any skill into .agents/skills/
+npx @alwkala/tidyfactor add tidyfactor-cinematic
+
+# Install specifically for Cursor (.cursor/skills/)
+npx @alwkala/tidyfactor add tidyfactor-styler --cursor
+```
+
+### 2. Standalone Shell Oneliners (Linux / macOS / Windows)
+```bash
+# Linux / macOS (cURL & Bash)
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash
+
+# Windows (PowerShell)
+irm https://tidyfactor.com/api/v1/install.ps1 | iex
+```
+
+> 📖 **Read Full Architecture & API Reference:** [DISTRIBUTION.md](DISTRIBUTION.md)
 
 ---
 

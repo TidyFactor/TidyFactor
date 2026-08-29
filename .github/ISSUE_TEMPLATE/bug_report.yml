@@ -1,0 +1,56 @@
+name: "🐛 Bug Report"
+description: "Report a bug, execution anomaly, CLI failure, or schema violation."
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a defect in TidyFactor! Please fill out the fields below so we can diagnose and resolve it swiftly.
+  - type: input
+    id: component
+    attributes:
+      label: Affected Component or Skill
+      description: "Which skill, CLI command, or architectural stack is affected? (e.g. CLI, Cinematic, Styler, Next, Doc)"
+      placeholder: "e.g. @alwkala/tidyfactor CLI or tidyfactor-cinematic"
+    validations:
+      required: true
+  - type: dropdown
+    id: agent_environment
+    attributes:
+      label: AI Agent / IDE Environment
+      description: "Which agent environment were you using when the issue occurred?"
+      options:
+        - "Google Antigravity / Gemini IDE"
+        - "Claude Code (CLI / Desktop)"
+        - "Cursor IDE"
+        - "OpenAI Codex / Copilot"
+        - "Windsurf IDE"
+        - "Standalone Node.js / Shell Terminal"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Steps to Reproduce
+      description: "Step-by-step instructions to reproduce the problem."
+      placeholder: |
+        1. Run command '...'
+        2. Prompt the agent with '...'
+        3. Observe error: '...'
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: "What should have happened according to the specification?"
+    validations:
+      required: true
+  - type: textarea
+    id: logs_diagnostics
+    attributes:
+      label: Logs / Error Diagnostics
+      description: "Paste relevant CLI output, terminal logs, or error stack traces."
+      render: shell

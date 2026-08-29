@@ -1,0 +1,43 @@
+name: "🧠 New AI Skill Proposal"
+description: "Propose a new domain-specific AI Agent Skill under the 13 TidyFactor Rules."
+title: "[SKILL PROPOSAL]: tidyfactor-"
+labels: ["skill-proposal", "needs-architect-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a new AI Coding Agent Skill for the TidyFactor ecosystem.
+  - type: input
+    id: skill_name
+    attributes:
+      label: Skill Name Identifier
+      description: "Must follow the naming convention `tidyfactor-<domain>` (e.g. `tidyfactor-astro`)"
+      placeholder: "tidyfactor-"
+    validations:
+      required: true
+  - type: textarea
+    id: domain_purpose
+    attributes:
+      label: Domain & Outcome
+      description: "What single primary outcome does this skill achieve?"
+    validations:
+      required: true
+  - type: textarea
+    id: command_taxonomy
+    attributes:
+      label: Command Taxonomy (~4-8 commands)
+      description: "List the intended commands and their single deliverables (e.g. `/init`, `/audit`, `/deploy`)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules_compliance
+    attributes:
+      label: TidyFactor 13 Rules Compliance
+      description: "Confirm architectural alignment:"
+      options:
+        - label: "Dispatcher discipline will be strictly enforced (~350 tokens in SKILL.md)"
+          required: true
+        - label: "Operational memory will contain pure schemas and zero narrative filler"
+          required: true
+        - label: "Behavioral parity will be maintained across Antigravity, Claude Code, Cursor, and Codex"
+          required: true

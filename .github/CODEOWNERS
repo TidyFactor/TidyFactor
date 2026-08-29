@@ -1,0 +1,16 @@
+# TidyFactor Master Ecosystem CODEOWNERS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global Default
+*                   @TidyFactor/core-architects @waelsegad
+
+# CLI & Distribution
+/bin/               @TidyFactor/core-architects @waelsegad
+/package.json       @TidyFactor/core-architects @waelsegad
+/DISTRIBUTION.md    @TidyFactor/core-architects @waelsegad
+/MANIFEST.json      @TidyFactor/core-architects @waelsegad
+
+# Governance & Security
+/.github/           @TidyFactor/core-architects @waelsegad
+/SECURITY.md        @TidyFactor/core-architects @waelsegad
+/LICENSE            @TidyFactor/core-architects @waelsegad

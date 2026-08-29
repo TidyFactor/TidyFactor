@@ -1,0 +1,28 @@
+name: "✨ Feature Request / RFC"
+description: "Suggest an improvement, new capability track, or architectural enhancement."
+title: "[FEATURE]: "
+labels: ["enhancement", "rfc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make TidyFactor more powerful, deterministic, or context-efficient? Let us know!
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem or Motivation
+      description: "Is your feature request related to a specific problem or architectural friction? (e.g. 'I'm always frustrated when...')"
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution & Workflow
+      description: "Describe the desired capability, command, or workflow deliverable."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives_considered
+    attributes:
+      label: Alternatives Considered
+      description: "Any alternative solutions or workarounds you've evaluated."

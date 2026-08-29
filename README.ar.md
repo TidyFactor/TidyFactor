@@ -88,7 +88,36 @@ TidyFactor Organization (github.com/TidyFactor)
 | **Documentation** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
 | **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
-> 📦 **TidyFactor Skills Suite Bundle**: [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+> 📦 **حزمة المهارات الشاملة (Master Suite .zip)**: [⬇️ تحميل مباشر من مركز TidyFactor](https://tidyfactor.com/downloads/tidyfactor-skills-suite.zip) | [مرآة GitHub](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+
+---
+
+## ⚡ طرق التثبيت المباشرة والمستقلة (دون الحاجة لـ GitHub)
+
+توفر منظومة TidyFactor قنوات توزيع وتثبيت فورية عبر سطر الأوامر وأداة CLI مخصصة:
+
+### 1. أداة TidyFactor CLI المركزية (NPX / NPM)
+```bash
+# استعراض كافة المهارات المتاحة
+npx @alwkala/tidyfactor list
+
+# تثبيت أي مهارة في مجلد العمل الحالي (.agents/skills/)
+npx @alwkala/tidyfactor add tidyfactor-cinematic
+
+# التثبيت المباشر لبيئة Cursor (.cursor/skills/)
+npx @alwkala/tidyfactor add tidyfactor-styler --cursor
+```
+
+### 2. سكربتات التثبيت السريعة بسطر واحد (Linux / macOS / Windows)
+```bash
+# أنظمة Linux / macOS (cURL & Bash)
+curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash
+
+# أنظمة Windows (PowerShell)
+irm https://tidyfactor.com/api/v1/install.ps1 | iex
+```
+
+> 📖 **المستند الفني الكامل لبنية واستراتيجية التوزيع:** [DISTRIBUTION.md](DISTRIBUTION.md)
 
 ---
 

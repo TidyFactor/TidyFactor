@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 TidyFactor Documentation
+    url: https://tidyfactor.com/documentation
+    about: Please check the official documentation before opening an issue.
+  - name: 💬 Community & Inquiries
+    url: https://tidyfactor.com
+    about: Ask general questions, request partnerships, or seek enterprise consultation.

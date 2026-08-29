@@ -1,0 +1,47 @@
+{
+  "name": "@alwkala/tidyfactor",
+  "version": "1.5.0",
+  "description": "TidyFactor — Universal Architecture Ecosystem & Multi-Platform CLI for AI Agent Skills",
+  "main": "bin/cli.js",
+  "bin": {
+    "tidyfactor": "bin/cli.js",
+    "tf": "bin/cli.js"
+  },
+  "keywords": [
+    "tidyfactor",
+    "ai-agent",
+    "skills",
+    "architecture",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "codex",
+    "cli",
+    "agentic-coding"
+  ],
+  "author": "TidyFactor & Alwkala <hello@tidyfactor.com> (https://tidyfactor.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://tidyfactor.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TidyFactor/TidyFactor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TidyFactor/TidyFactor/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin",
+    "MANIFEST.json",
+    "DISTRIBUTION.md",
+    "README.md",
+    "README.ar.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
