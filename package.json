@@ -1,5 +1,5 @@
 {
-  "name": "@alwkala/tidyfactor",
+  "name": "@tidyfactor/cli",
   "version": "1.6.0",
   "description": "TidyFactor — Universal Architecture Ecosystem & Multi-Platform CLI for AI Agent Skills",
   "main": "bin/cli.js",
@@ -19,7 +19,7 @@
     "cli",
     "agentic-coding"
   ],
-  "author": "TidyFactor & Alwkala <hello@tidyfactor.com> (https://tidyfactor.com)",
+  "author": "TidyFactor <hello@tidyfactor.com> (https://tidyfactor.com)",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
   "repository": {

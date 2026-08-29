@@ -8,7 +8,7 @@
 
 [![الموقع الرسمي](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
 [![التوثيق الفني](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
-[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/alwkala)
+[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/tidyfactor)
 [![الترخيص: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 [![الإصدار v1.6.0](https://img.shields.io/badge/Release-v1.6.0-emerald.svg?style=for-the-badge)](https://github.com/TidyFactor/TidyFactor/releases/latest)
 
@@ -18,7 +18,7 @@
 
 ```bash
 # تشغيل المعالج التفاعلي الشامل عبر 10+ بيئات لوكلاء الذكاء الاصطناعي
-npx @alwkala/tidyfactor init
+npx @tidyfactor/cli init
 ```
 
 <br/>
@@ -47,19 +47,19 @@ npx @alwkala/tidyfactor init
 ### 1. عبر سطر أوامر Node.js (NPX) — بنية مزدوجة الحماية (NPM + Direct CDN)
 ```bash
 # تشغيل معالج الإعداد التفاعلي ثلاثي المراحل
-npx @alwkala/tidyfactor init
+npx @tidyfactor/cli init
 
 # تثبيت باقة عمل مخصصة
-npx @alwkala/tidyfactor add pack:design
-npx @alwkala/tidyfactor add pack:saas
+npx @tidyfactor/cli add pack:design
+npx @tidyfactor/cli add pack:saas
 
 # تثبيت مهارة محددة مع توجيه بيئة الـ IDE
-npx @alwkala/tidyfactor add tidyfactor-styler --cursor
-npx @alwkala/tidyfactor add tidyfactor-cinematic --claude
-npx @alwkala/tidyfactor add tidyfactor-skill-architect --global
+npx @tidyfactor/cli add tidyfactor-styler --cursor
+npx @tidyfactor/cli add tidyfactor-cinematic --claude
+npx @tidyfactor/cli add tidyfactor-skill-architect --global
 
 # فحص صحة بيئة العمل واكتشاف الوكلاء النشطين
-npx @alwkala/tidyfactor doctor
+npx @tidyfactor/cli doctor
 ```
 
 ### 2. سكربتات التثبيت المستقلة بسطر واحد (بدون الحاجة لـ Node.js)
@@ -83,11 +83,11 @@ $Skill = 'all'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 
 | معرف الباقة | اسم الباقة | النطاق والتخصص | أمر التثبيت السريع |
 | :--- | :--- | :--- | :--- |
-| `pack:design` | **باقة التصميم والواجهات** | صفحات الهبوط الفاخرة + استوديو التصميم + محرك الـ RTL | `npx @alwkala/tidyfactor add pack:design` |
-| `pack:saas` | **باقة تطبيقات الـ SaaS** | محرك Next.js 16 + Supabase RLS + التصميم + التسويق والتوثيق | `npx @alwkala/tidyfactor add pack:saas` |
-| `pack:engineering` | **باقة الهندسة الكاملة** | مونويلث PHP 8.x + HTMX + سبا Vanilla JS + HTML ثابت | `npx @alwkala/tidyfactor add pack:engineering` |
-| `pack:governance` | **باقة الحوكمة والعمليات** | معمار المهارات + منصة التوثيق + محرك إدارة GitHub | `npx @alwkala/tidyfactor add pack:governance` |
-| `pack:growth` | **باقة النمو والتسويق** | محرك التسويق المباشر + الـ SEO + صفحات الهبوط والـ RTL | `npx @alwkala/tidyfactor add pack:growth` |
+| `pack:design` | **باقة التصميم والواجهات** | صفحات الهبوط الفاخرة + استوديو التصميم + محرك الـ RTL | `npx @tidyfactor/cli add pack:design` |
+| `pack:saas` | **باقة تطبيقات الـ SaaS** | محرك Next.js 16 + Supabase RLS + التصميم + التسويق والتوثيق | `npx @tidyfactor/cli add pack:saas` |
+| `pack:engineering` | **باقة الهندسة الكاملة** | مونويلث PHP 8.x + HTMX + سبا Vanilla JS + HTML ثابت | `npx @tidyfactor/cli add pack:engineering` |
+| `pack:governance` | **باقة الحوكمة والعمليات** | معمار المهارات + منصة التوثيق + محرك إدارة GitHub | `npx @tidyfactor/cli add pack:governance` |
+| `pack:growth` | **باقة النمو والتسويق** | محرك التسويق المباشر + الـ SEO + صفحات الهبوط والـ RTL | `npx @tidyfactor/cli add pack:growth` |
 
 ---
 

@@ -7,7 +7,7 @@
 
 [![Official Website](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
 [![Documentation](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
-[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/alwkala)
+[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/tidyfactor)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 [![Location](https://img.shields.io/badge/Location-Cairo,%20Egypt-emerald.svg?style=for-the-badge&logo=google-maps&logoColor=white)](https://tidyfactor.com)
 
@@ -80,16 +80,16 @@ TidyFactor Organization (github.com/TidyFactor)
 
 | Category | Repository | Track / Focus | Agent Skill | NPM Package |
 | :--- | :--- | :--- | :--- | :--- |
-| **Design** | [**`TidyFactor/Cinematic`**](https://github.com/TidyFactor/Cinematic) | Scroll-driven luxury landing pages (Apple × Cartier) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
-| **Design** | [**`TidyFactor/Design`**](https://github.com/TidyFactor/Design) | Interactive code-native UI design lifecycle engine | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
-| **Design** | [**`TidyFactor/Styler`**](https://github.com/TidyFactor/Styler) | Framework styler, section redesign & RTL polish | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
-| **Development** | [**`TidyFactor/Doc`**](https://github.com/TidyFactor/Doc) | Codebase interview, API specs & Docsify engine | `tidyfactor-doc` | [`@alwkala/tidyfactor-doc`](https://www.npmjs.com/package/@alwkala/tidyfactor-doc) |
-| **Development** | [**`TidyFactor/Next`**](https://github.com/TidyFactor/Next) | Multi-tenant SaaS, Postgres RLS & Dev-Perf engine | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
-| **Development** | [**`TidyFactor/HTML`**](https://github.com/TidyFactor/HTML) | Content-first static platforms & semantic SEO | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
-| **Development** | [**`TidyFactor/HTMX`**](https://github.com/TidyFactor/HTMX) | Server-driven hypermedia & micro-HTML endpoints | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |
-| **Development** | [**`TidyFactor/JS`**](https://github.com/TidyFactor/JS) | Framework-free reactive ES Modules & vanilla SPA | `tidyfactor-js` | [`@alwkala/tidyfactor-js`](https://www.npmjs.com/package/@alwkala/tidyfactor-js) |
-| **Development** | [**`TidyFactor/PHP`**](https://github.com/TidyFactor/PHP) | Modern server-rendered PHP 8.x architecture & UI | `tidyfactor-php` | [`@alwkala/tidyfactor-php`](https://www.npmjs.com/package/@alwkala/tidyfactor-php) |
-| **Growth** | [**`TidyFactor/Marketing`**](https://github.com/TidyFactor/Marketing) | Direct-response copywriting, SEO clusters & CRO | `tidyfactor-marketing` | [`@alwkala/tidyfactor-marketing`](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing) |
+| **Design** | [**`TidyFactor/Cinematic`**](https://github.com/TidyFactor/Cinematic) | Scroll-driven luxury landing pages (Apple × Cartier) | `tidyfactor-cinematic` | [`@tidyfactor/cinematic`](https://www.npmjs.com/package/@tidyfactor/cinematic) |
+| **Design** | [**`TidyFactor/Design`**](https://github.com/TidyFactor/Design) | Interactive code-native UI design lifecycle engine | `tidyfactor-design` | [`@tidyfactor/design`](https://www.npmjs.com/package/@tidyfactor/design) |
+| **Design** | [**`TidyFactor/Styler`**](https://github.com/TidyFactor/Styler) | Framework styler, section redesign & RTL polish | `tidyfactor-styler` | [`@tidyfactor/styler`](https://www.npmjs.com/package/@tidyfactor/styler) |
+| **Development** | [**`TidyFactor/Doc`**](https://github.com/TidyFactor/Doc) | Codebase interview, API specs & Docsify engine | `tidyfactor-doc` | [`@tidyfactor/doc`](https://www.npmjs.com/package/@tidyfactor/doc) |
+| **Development** | [**`TidyFactor/Next`**](https://github.com/TidyFactor/Next) | Multi-tenant SaaS, Postgres RLS & Dev-Perf engine | `tidyfactor-next` | [`@tidyfactor/next`](https://www.npmjs.com/package/@tidyfactor/next) |
+| **Development** | [**`TidyFactor/HTML`**](https://github.com/TidyFactor/HTML) | Content-first static platforms & semantic SEO | `tidyfactor-html` | [`@tidyfactor/html`](https://www.npmjs.com/package/@tidyfactor/html) |
+| **Development** | [**`TidyFactor/HTMX`**](https://github.com/TidyFactor/HTMX) | Server-driven hypermedia & micro-HTML endpoints | `tidyfactor-htmx` | [`@tidyfactor/htmx`](https://www.npmjs.com/package/@tidyfactor/htmx) |
+| **Development** | [**`TidyFactor/JS`**](https://github.com/TidyFactor/JS) | Framework-free reactive ES Modules & vanilla SPA | `tidyfactor-js` | [`@tidyfactor/js`](https://www.npmjs.com/package/@tidyfactor/js) |
+| **Development** | [**`TidyFactor/PHP`**](https://github.com/TidyFactor/PHP) | Modern server-rendered PHP 8.x architecture & UI | `tidyfactor-php` | [`@tidyfactor/php`](https://www.npmjs.com/package/@tidyfactor/php) |
+| **Growth** | [**`TidyFactor/Marketing`**](https://github.com/TidyFactor/Marketing) | Direct-response copywriting, SEO clusters & CRO | `tidyfactor-marketing` | [`@tidyfactor/marketing`](https://www.npmjs.com/package/@tidyfactor/marketing) |
 
 ---
 

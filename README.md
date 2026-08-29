@@ -6,7 +6,7 @@
 
 [![Official Website](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
 [![Documentation](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
-[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/alwkala)
+[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/tidyfactor)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 [![Release v1.6.0](https://img.shields.io/badge/Release-v1.6.0-emerald.svg?style=for-the-badge)](https://github.com/TidyFactor/TidyFactor/releases/latest)
 
@@ -16,7 +16,7 @@
 
 ```bash
 # Instant 3-Step Interactive Wizard across 10+ AI Agent IDEs
-npx @alwkala/tidyfactor init
+npx @tidyfactor/cli init
 ```
 
 <br/>
@@ -43,19 +43,19 @@ The web stack has changed. The next generation of software must be designed for 
 ### 1. Unified Node.js CLI (NPX) — Dual-Redundant (NPM + Direct CDN)
 ```bash
 # Launch interactive 3-step setup wizard
-npx @alwkala/tidyfactor init
+npx @tidyfactor/cli init
 
 # Install a curated workflow pack
-npx @alwkala/tidyfactor add pack:design
-npx @alwkala/tidyfactor add pack:saas
+npx @tidyfactor/cli add pack:design
+npx @tidyfactor/cli add pack:saas
 
 # Install a specific skill with target IDE flag
-npx @alwkala/tidyfactor add tidyfactor-styler --cursor
-npx @alwkala/tidyfactor add tidyfactor-cinematic --claude
-npx @alwkala/tidyfactor add tidyfactor-skill-architect --global
+npx @tidyfactor/cli add tidyfactor-styler --cursor
+npx @tidyfactor/cli add tidyfactor-cinematic --claude
+npx @tidyfactor/cli add tidyfactor-skill-architect --global
 
 # Workspace health audit & agent discovery
-npx @alwkala/tidyfactor doctor
+npx @tidyfactor/cli doctor
 ```
 
 ### 2. Standalone Shell Oneliners (Zero Node.js Required)
@@ -79,11 +79,11 @@ $Skill = 'all'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 
 | Pack Identifier | Pack Name | Focus & Scope | Quick Install Command |
 | :--- | :--- | :--- | :--- |
-| `pack:design` | **Design & Frontend Triad** | Cinematic Landing + Design Studio + Styler & RTL Engine | `npx @alwkala/tidyfactor add pack:design` |
-| `pack:saas` | **SaaS Starter Kit** | Next.js 16 + Supabase RLS + Design + Marketing + Doc Platform | `npx @alwkala/tidyfactor add pack:saas` |
-| `pack:engineering` | **Full-Stack Engineering** | PHP 8.x Monolith + HTMX + Vanilla JS SPA + Static HTML + Doc | `npx @alwkala/tidyfactor add pack:engineering` |
-| `pack:governance` | **Governance & Operations** | Skill Architect + Doc Platform + GitHub Operations Engine | `npx @alwkala/tidyfactor add pack:governance` |
-| `pack:growth` | **Growth & Marketing** | Direct-Response Marketing + SEO + Cinematic + Styler | `npx @alwkala/tidyfactor add pack:growth` |
+| `pack:design` | **Design & Frontend Triad** | Cinematic Landing + Design Studio + Styler & RTL Engine | `npx @tidyfactor/cli add pack:design` |
+| `pack:saas` | **SaaS Starter Kit** | Next.js 16 + Supabase RLS + Design + Marketing + Doc Platform | `npx @tidyfactor/cli add pack:saas` |
+| `pack:engineering` | **Full-Stack Engineering** | PHP 8.x Monolith + HTMX + Vanilla JS SPA + Static HTML + Doc | `npx @tidyfactor/cli add pack:engineering` |
+| `pack:governance` | **Governance & Operations** | Skill Architect + Doc Platform + GitHub Operations Engine | `npx @tidyfactor/cli add pack:governance` |
+| `pack:growth` | **Growth & Marketing** | Direct-Response Marketing + SEO + Cinematic + Styler | `npx @tidyfactor/cli add pack:growth` |
 
 ---
 

@@ -519,7 +519,7 @@ async function main() {
       console.log(`${color.green(s.id.padEnd(30))} ${color.yellow(s.category.toUpperCase().padEnd(16))} ${color.cyan(s.commands.slice(0, 3).join(' '))} ${color.dim(s.commands.slice(3).join(' '))}`);
     });
     console.log(color.cyan('───────────────────────────────────────────────────────────────────────────────────────\n'));
-    console.log(`💡 Run ${color.green('npx @alwkala/tidyfactor init')} for the interactive wizard.\n`);
+    console.log(`💡 Run ${color.green('npx @tidyfactor/cli init')} for the interactive wizard.\n`);
     return;
   }
 
@@ -531,7 +531,7 @@ async function main() {
       console.log(`  ${''.padEnd(20)} ${color.dim(pack.desc)}`);
       console.log(`  ${''.padEnd(20)} ${color.cyan(pack.skills.map(s => s.replace('tidyfactor-', '')).join(', '))}\n`);
     }
-    console.log(`💡 Install a pack: ${color.green('npx @alwkala/tidyfactor add pack:design')}\n`);
+    console.log(`💡 Install a pack: ${color.green('npx @tidyfactor/cli add pack:design')}\n`);
     return;
   }
 
@@ -607,14 +607,14 @@ async function main() {
   printBanner();
   console.log(`
 ${color.bold('USAGE:')}
-  ${color.green('npx @alwkala/tidyfactor')}                  # Launch interactive Setup Wizard
-  ${color.green('npx @alwkala/tidyfactor init')}             # Interactive 3-step setup & recommendation
-  ${color.green('npx @alwkala/tidyfactor list')}             # List all 12 skills & commands
-  ${color.green('npx @alwkala/tidyfactor packs')}            # List curated workflow packs
-  ${color.green('npx @alwkala/tidyfactor add <skill>')}      # Install & unpack a specific skill
-  ${color.green('npx @alwkala/tidyfactor add pack:<id>')}    # Install a curated pack (design, saas, etc.)
-  ${color.green('npx @alwkala/tidyfactor add --all')}        # Install entire 12-skill master suite
-  ${color.green('npx @alwkala/tidyfactor doctor')}           # Workspace diagnostics & agent check
+  ${color.green('npx @tidyfactor/cli')}                  # Launch interactive Setup Wizard
+  ${color.green('npx @tidyfactor/cli init')}             # Interactive 3-step setup & recommendation
+  ${color.green('npx @tidyfactor/cli list')}             # List all 12 skills & commands
+  ${color.green('npx @tidyfactor/cli packs')}            # List curated workflow packs
+  ${color.green('npx @tidyfactor/cli add <skill>')}      # Install & unpack a specific skill
+  ${color.green('npx @tidyfactor/cli add pack:<id>')}    # Install a curated pack (design, saas, etc.)
+  ${color.green('npx @tidyfactor/cli add --all')}        # Install entire 12-skill master suite
+  ${color.green('npx @tidyfactor/cli doctor')}           # Workspace diagnostics & agent check
 
 ${color.bold('IDE TARGET FLAGS:')}
   ${color.cyan('--cursor')}                                  # Mount to .cursor/skills/

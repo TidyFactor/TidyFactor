@@ -14,11 +14,11 @@ graph TD
     Packager --> |1. Direct Download Assets| WebStorage[tidyfactor.com /downloads/skills/]
     Packager --> |2. Self-Hosted API Registry| WebAPI[tidyfactor.com /api/v1/skills]
     Packager --> |3. Standalone Installers| WebInstallers[tidyfactor.com /api/v1/install.sh & install.ps1]
-    Packager --> |4. Unified CLI Engine| NPMCLI[@alwkala/tidyfactor on NPM]
+    Packager --> |4. Unified CLI Engine| NPMCLI[@tidyfactor/cli on NPM]
     Packager --> |5. Umbrella Manifest & Sync| Umbrella[b:\Dev-Studio\TidyFactor]
     
     WebInstallers --> |curl / irm| AnyTerminal[Any OS Terminal / CI/CD]
-    NPMCLI --> |npx @alwkala/tidyfactor add| IDEAgents[Antigravity / Claude / Cursor / Codex]
+    NPMCLI --> |npx @tidyfactor/cli add| IDEAgents[Antigravity / Claude / Cursor / Codex]
     WebStorage --> |Direct .skill / .zip| WebVisitors[Website Users & Enterprise]
 ```
 
@@ -31,22 +31,22 @@ The unified CLI package provides zero-dependency skill discovery, installation, 
 ### Instant Execution (NPX)
 ```bash
 # List all 12 registered skills
-npx @alwkala/tidyfactor list
+npx @tidyfactor/cli list
 
 # Install a skill into your current workspace (.agents/skills/)
-npx @alwkala/tidyfactor add tidyfactor-cinematic
+npx @tidyfactor/cli add tidyfactor-cinematic
 
 # Install specifically for Cursor (.cursor/skills/)
-npx @alwkala/tidyfactor add tidyfactor-styler --cursor
+npx @tidyfactor/cli add tidyfactor-styler --cursor
 
 # Install globally for Antigravity / Gemini
-npx @alwkala/tidyfactor add tidyfactor-skill-architect --global
+npx @tidyfactor/cli add tidyfactor-skill-architect --global
 
 # Inspect skill commands and triggers
-npx @alwkala/tidyfactor info tidyfactor-marketing
+npx @tidyfactor/cli info tidyfactor-marketing
 
 # Audit active agent skills in your environment
-npx @alwkala/tidyfactor doctor
+npx @tidyfactor/cli doctor
 ```
 
 ---

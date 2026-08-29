@@ -7,7 +7,7 @@
 
 [![Official Website](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
 [![Documentation](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
-[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/alwkala)
+[![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/tidyfactor)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 [![Location](https://img.shields.io/badge/Location-Cairo,%20Egypt-emerald.svg?style=for-the-badge&logo=google-maps&logoColor=white)](https://tidyfactor.com)
 
@@ -71,18 +71,18 @@ TidyFactor Organization (github.com/TidyFactor)
 
 | Category | Skill Identifier | Quick CLI Installation | Direct Download (.skill) |
 | :--- | :--- | :--- | :---: |
-| **Governance** | `tidyfactor-skill-architect` | `npx @alwkala/tidyfactor-skill-architect add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Skill-Architect/releases/latest/download/tidyfactor-skill-architect.skill) |
-| **Operations** | `tidyfactor-github` | `npx @alwkala/tidyfactor-github add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/GitHub/releases/latest/download/tidyfactor-github.skill) |
-| **Design** | `tidyfactor-cinematic` | `npx @alwkala/create-cinematic-kit add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Cinematic/releases/latest/download/tidyfactor-cinematic.skill) |
-| **Design** | `tidyfactor-design` | `npx @alwkala/tidyfactor-design add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Design/releases/latest/download/tidyfactor-design.skill) |
-| **Design** | `tidyfactor-styler` | `npx @alwkala/tidyfactor-styler add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Styler/releases/latest/download/tidyfactor-styler.skill) |
-| **Engineering** | `tidyfactor-html` | `npx @alwkala/tidyfactor-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
-| **Engineering** | `tidyfactor-next` | `npx @alwkala/tidyfactor-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
-| **Engineering** | `tidyfactor-htmx` | `npx @alwkala/tidyfactor-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
-| **Engineering** | `tidyfactor-js` | `npx @alwkala/tidyfactor-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
-| **Engineering** | `tidyfactor-php` | `npx @alwkala/tidyfactor-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
-| **Documentation** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
-| **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
+| **Governance** | `tidyfactor-skill-architect` | `npx @tidyfactor/cli-skill-architect add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Skill-Architect/releases/latest/download/tidyfactor-skill-architect.skill) |
+| **Operations** | `tidyfactor-github` | `npx @tidyfactor/cli-github add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/GitHub/releases/latest/download/tidyfactor-github.skill) |
+| **Design** | `tidyfactor-cinematic` | `npx @tidyfactor/cinematic add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Cinematic/releases/latest/download/tidyfactor-cinematic.skill) |
+| **Design** | `tidyfactor-design` | `npx @tidyfactor/cli-design add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Design/releases/latest/download/tidyfactor-design.skill) |
+| **Design** | `tidyfactor-styler` | `npx @tidyfactor/cli-styler add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Styler/releases/latest/download/tidyfactor-styler.skill) |
+| **Engineering** | `tidyfactor-html` | `npx @tidyfactor/cli-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
+| **Engineering** | `tidyfactor-next` | `npx @tidyfactor/cli-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
+| **Engineering** | `tidyfactor-htmx` | `npx @tidyfactor/cli-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
+| **Engineering** | `tidyfactor-js` | `npx @tidyfactor/cli-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
+| **Engineering** | `tidyfactor-php` | `npx @tidyfactor/cli-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
+| **Documentation** | `tidyfactor-doc` | `npx @tidyfactor/cli-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
+| **Growth** | `tidyfactor-marketing` | `npx @tidyfactor/cli-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
 > 📦 **TidyFactor Skills Suite Bundle**: [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
 

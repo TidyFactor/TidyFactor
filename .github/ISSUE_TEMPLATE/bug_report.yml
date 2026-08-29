@@ -12,7 +12,7 @@ body:
     attributes:
       label: Affected Component or Skill
       description: "Which skill, CLI command, or architectural stack is affected? (e.g. CLI, Cinematic, Styler, Next, Doc)"
-      placeholder: "e.g. @alwkala/tidyfactor CLI or tidyfactor-cinematic"
+      placeholder: "e.g. @tidyfactor/cli CLI or tidyfactor-cinematic"
     validations:
       required: true
   - type: dropdown
