@@ -19,6 +19,12 @@
 npx @alwkala/tidyfactor init
 ```
 
+<br/>
+
+<p align="center">
+  <img src="assets/cli-interactive-wizard.png" alt="TidyFactor Interactive CLI Setup Wizard" width="85%" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+</p>
+
 </div>
 
 ---
