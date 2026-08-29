@@ -1,9 +1,9 @@
-<div align="center">
+<div align="center" dir="rtl">
 
-# ⚡ TidyFactor Architecture Ecosystem
-### AI-Native Web Architecture, Design Systems & Agent Skills
+# ⚡ منظومة تايدي فاكتور المعمارية (TidyFactor Architecture Ecosystem)
+### هندسة الويب الأصلية للذكاء الاصطناعي، أنظمة التصميم، ومهارات الوكلاء البرمجيين
 
-**Building sustainable, deterministic, and modular software for the era of Human-Agent Collaboration.**
+**بناء برمجيات مستدامة، قطعية، ونموذجية لعصر التعاون بين المطورين والوكلاء الأذكياء.**
 
 [![Official Website](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
 [![Documentation](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
@@ -23,17 +23,17 @@
 
 ---
 
-## 🌟 Why TidyFactor Exists
+## 🌟 لماذا تم تأسيس منظومة تايدي فاكتور (TidyFactor)؟
 
-The web has changed. Artificial Intelligence did not simply make software development faster — it fundamentally transformed how software is created, understood, maintained, and evolved.
+لقد تغيرت بنية الويب جذرياً. لم يقتصر دور الذكاء الاصطناعي على تسريع تطوير البرمجيات فحسب — بل غيّر بشكل جوهري طريقة إنشاء البرمجيات، وفهمها، وصيانتها، وتطويرها.
 
-The traditional web stack was designed exclusively for humans writing code. The next generation of web platforms must be designed for seamless collaboration between **Humans, Developers, AI Models, Autonomous Coding Agents (*Google Antigravity, Claude Code, Cursor, Codex, Windsurf*), and Future Intelligent Systems.**
+تم تصميم حزمة الويب التقليدية حصرياً للبشر الذين يكتبون الكود يدوياً. أما الجيل القادم من منصات الويب فيجب تصميمه ليتيح التعاون السلس والفوري بين المطورين، نماذج الذكاء الاصطناعي، ووكلاء البرمجة الذاتية (Google Antigravity و Claude Code و Cursor و Codex و Windsurf).
 
-**TidyFactor** provides the architectural foundations, deterministic agent skills, and modular codebases to make that reality reliable, secure, and production-grade.
+توفر منظومة تايدي فاكتور (TidyFactor) الأسس المعمارية، ومهارات الوكلاء المحددة، وقواعد الكود المعيارية لجعل هذا الواقع موثوقاً، آمناً، وجاهزاً للإنتاج.
 
 ---
 
-## 🏛️ Ecosystem Architecture
+## 🏛️ Ecosystem Architecture (12 Official Skills)
 
 ```
 TidyFactor Organization (github.com/TidyFactor)
@@ -63,25 +63,15 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ---
 
-## 💎 The Frontend Triad
+## 💎 الثلاثي البصري والهندسي للواجهات (The Frontend Triad)
 
-```
-                TidyFactor
-                    │
-          ┌─────────┼─────────┐
-          │         │         │
-      Cinematic   Design    Styler
-          │         │         │
-      Experience Prototype Production
-          │         │         │
-       "Wow"      "Build"   "Ship"
-```
-
-* **Cinematic (`TidyFactor/Cinematic`)**: Creates unforgettable first impressions with scroll-driven `<canvas>` frame sequences and luxury brand storytelling.
-* **Design (`TidyFactor/Design`)**: Bridges ideation and code with an interactive, code-native UI design system and zero-build prototyping.
-* **Styler (`TidyFactor/Styler`)**: Operates across existing production codebases to deliver pixel-perfect section redesigns and native Arabic/RTL polish.
+* **Cinematic (`TidyFactor/Cinematic`)**: Luxury scroll-driven `<canvas>` frame sequence experience.
+* **Design (`TidyFactor/Design`)**: Interactive code-native UI design lifecycle engine and Figma alternative.
+* **Styler (`TidyFactor/Styler`)**: Surgical production framework styler and RTL UI polish engine.
 
 ---
+
+## 📦 Skills Matrix & Direct Downloads
 
 | Category | Skill Identifier | Quick CLI Installation | Direct Download (.skill) |
 | :--- | :--- | :--- | :---: |
@@ -98,24 +88,21 @@ TidyFactor Organization (github.com/TidyFactor)
 | **Documentation** | `tidyfactor-doc` | `npx @alwkala/tidyfactor-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
 | **Growth** | `tidyfactor-marketing` | `npx @alwkala/tidyfactor-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
-> 📦 **TidyFactor Skills Suite Bundle**: Prefer downloading all skills at once? [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
-
-
-
+> 📦 **TidyFactor Skills Suite Bundle**: [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
 
 ---
 
-## 🏛️ Core Architectural Principles
+## 🏛️ المبادئ المعمارية الجوهرية الـ 13
 
-1. **Context-Efficient Architecture**: Agent skills use lightweight dispatchers (~350 tokens) with progressive disclosure — loading deep domain memory strictly on demand.
-2. **Deterministic Execution**: Zero autonomous mass-edit scripts. Deterministic toolchains wrap native compiler diagnostics (`tsc`, `node`, `git`, OS APIs).
-3. **Locked Tenant Isolation**: Security boundaries live at the database layer (PostgreSQL RLS), ensuring application logic bugs cannot leak tenant data.
-4. **Evidence-Based Performance**: Measure before optimizing. Cold/warm benchmark separation with a strict 20% statistical noise threshold.
-5. **Human-Agent Code Symmetry**: Code structured for instant comprehension by both senior human engineers and autonomous AI agents.
+1. **Context-Efficient Architecture**: Agent skills use lightweight dispatchers (~350 tokens) with progressive disclosure.
+2. **Deterministic Execution**: Zero autonomous mass-edit scripts. Toolchains wrap native diagnostics (`tsc`, `node`, `git`, OS APIs).
+3. **Locked Tenant Isolation**: Security boundaries live at the database layer (PostgreSQL RLS).
+4. **Evidence-Based Performance**: Measure before optimizing. Cold/warm benchmark separation with a 20% noise threshold.
+5. **Human-Agent Code Symmetry**: Code structured for instant comprehension by human engineers and AI coding agents.
 
 ---
 
-## 👨‍💻 Organization & Contact Details
+## 👨‍💻 المنظمة والتواصل والدعم الرسمي
 
 - 🌐 **Official Website:** [https://tidyfactor.com/](https://tidyfactor.com/)
 - 📚 **Official Documentation:** [https://tidyfactor.com/documentation](https://tidyfactor.com/documentation)
@@ -128,6 +115,6 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ---
 
-## 📜 License
+## 📜 الترخيص والمجتمع
 
 Distributed under the **Apache License 2.0**. Copyright (c) 2026 [TidyFactor](https://tidyfactor.com) & [Alwkala Digital Agency](https://alwkala.com).
