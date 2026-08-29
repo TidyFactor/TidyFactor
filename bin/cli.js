@@ -2,7 +2,8 @@
 /**
  * TidyFactor CLI — Universal Agent Skill Manager & Interactive Setup Wizard
  * Intelligent project environment detection, interactive skill recommendations,
- * and automated zero-dependency unpacking across 10+ AI Agent IDEs (Antigravity, Cursor, Claude, Windsurf, Cline, Codex).
+ * and automated zero-dependency unpacking across 18+ AI Agent IDEs:
+ * Trae, Cursor, Windsurf, Antigravity, Copilot, RooCode, OpenCode, KiloCode, Warp, Kiro, Claude, Zed, JetBrains, Blackbox, Cline, AMP, OpenClaw, Codex.
  *
  * @license Apache-2.0
  * @author TidyFactor & Alwkala <hello@tidyfactor.com>
@@ -16,7 +17,7 @@ const os = require('os');
 const { execSync } = require('child_process');
 const readline = require('readline');
 
-const VERSION = '1.6.0';
+const VERSION = '1.7.0';
 const REGISTRY_HOST = process.env.TIDYFACTOR_REGISTRY_HOST || 'tidyfactor.com';
 const REGISTRY_API_PATH = '/api/v1/skills';
 
@@ -45,6 +46,28 @@ const PACKS = {
   'growth':      { name: 'Growth & Marketing', desc: 'Direct-response copywriting, SEO engine & high-converting pages', skills: ['tidyfactor-marketing', 'tidyfactor-cinematic', 'tidyfactor-styler', 'tidyfactor-html'] },
 };
 
+// 18+ Agentic IDE Directory & Detection Definitions
+const AGENT_PLATFORMS = [
+  { id: 'trae',        name: 'Trae AI IDE',               path: '.trae/skills',        signatures: ['.trae', '.traerules', '.trae/skills'] },
+  { id: 'cursor',      name: 'Cursor IDE',                path: '.cursor/skills',      signatures: ['.cursor', '.cursorrules', '.cursor/skills'] },
+  { id: 'windsurf',    name: 'Windsurf Cascade',          path: '.windsurf/skills',    signatures: ['.windsurf', '.windsurfrules', '.windsurf/skills'] },
+  { id: 'antigravity', name: 'Google Antigravity/Gemini', path: '.agents/skills',      signatures: ['.agents', '.agents/skills', 'GEMINI.md'] },
+  { id: 'copilot',     name: 'GitHub Copilot',            path: '.github/prompts',     signatures: ['.github/copilot-instructions.md', '.github/prompts', '.github/skills'] },
+  { id: 'roo',         name: 'RooCode (Roo Cline)',       path: '.roo/skills',         signatures: ['.roo', '.roomodes', '.roo/rules', '.roo/skills'] },
+  { id: 'opencode',    name: 'OpenCode / Zen',            path: '.opencode/skills',    signatures: ['.opencode', 'opencode.json', '.opencode/skills'] },
+  { id: 'kilocode',    name: 'KiloCode',                  path: '.kilocode/skills',    signatures: ['.kilocode', 'kilo.jsonc', '.kilo', '.kilocode/skills'] },
+  { id: 'warp',        name: 'Warp Terminal',             path: '.warp/skills',        signatures: ['.warp', '.warp/workflows', '.warp/skills'] },
+  { id: 'kiro',        name: 'Kiro (AWS Spec IDE)',       path: '.kiro/skills',        signatures: ['.kiro', '.kiro/steering', '.kiro/skills'] },
+  { id: 'claude',      name: 'Claude Code',               path: '.claude/skills',      signatures: ['.claude', 'CLAUDE.md', '.claude/skills'] },
+  { id: 'zed',         name: 'Zed AI Agent',              path: '.zed/skills',         signatures: ['.zed', '.zed/settings.json', '.zed/skills'] },
+  { id: 'jetbrains',   name: 'JetBrains AI',              path: '.jetbrains/skills',   signatures: ['.idea', '.idea/ai', '.jetbrains/skills'] },
+  { id: 'blackbox',    name: 'Blackbox AI',               path: '.blackbox/skills',    signatures: ['.blackbox', '.blackboxrules', '.blackbox/skills'] },
+  { id: 'cline',       name: 'Cline / VS Code',           path: '.cline/skills',       signatures: ['.clinerules', '.cline', '.cline/skills'] },
+  { id: 'amp',         name: 'AMP AI',                    path: '.amp/skills',         signatures: ['.amprules', '.amp', '.amp/skills'] },
+  { id: 'openclaw',    name: 'OpenClaw',                  path: '.openclaw/skills',    signatures: ['.openclaw', '.clawdbot', '.openclaw/skills'] },
+  { id: 'codex',       name: 'OpenAI Codex',              path: '.agents/skills',      signatures: ['codex.md', 'AGENTS.md'] },
+];
+
 // ANSI Color & Formatting Helpers
 const color = {
   cyan: (s) => `\x1b[36m${s}\x1b[0m`,
@@ -64,7 +87,7 @@ function printBanner() {
   console.log(color.cyan(color.bold(`
   ┌─────────────────────────────────────────────────────────────┐
   │  ⚡ TidyFactor Universal Architecture & AI Skill Engine     │
-  │  Interactive Setup & Multi-Agent Environment Installer     │
+  │  Interactive Setup & 18+ Agentic IDEs Mount Installer       │
   │  v${VERSION.padEnd(58)}│
   └─────────────────────────────────────────────────────────────┘`)));
 }
@@ -129,36 +152,18 @@ function detectProjectEnvironment(targetDir = process.cwd()) {
     env.recommendedSkillIds.push('tidyfactor-github');
   }
 
-  // 10+ AI Agent Discovery Matrix
-  if (hasFile('.agents') || hasFile('.agents/skills')) {
-    env.detectedAgents.push({ id: 'antigravity', name: 'Google Antigravity / Gemini', path: '.agents/skills', active: true });
-  }
-  if (hasFile('.cursor') || hasFile('.cursor/skills')) {
-    env.detectedAgents.push({ id: 'cursor', name: 'Cursor IDE', path: '.cursor/skills', active: true });
-  }
-  if (hasFile('.claude') || fs.existsSync(path.join(os.homedir(), '.claude'))) {
-    env.detectedAgents.push({ id: 'claude', name: 'Claude Code', path: '.claude/skills', active: true });
-  }
-  if (hasFile('.windsurf') || hasFile('.windsurfrules')) {
-    env.detectedAgents.push({ id: 'windsurf', name: 'Windsurf Cascade', path: '.windsurf/skills', active: true });
-  }
-  if (hasFile('.clinerules') || hasFile('.cline')) {
-    env.detectedAgents.push({ id: 'cline', name: 'Cline / VS Code', path: '.cline/skills', active: true });
-  }
-  if (hasFile('.amprules') || hasFile('.amp')) {
-    env.detectedAgents.push({ id: 'amp', name: 'AMP AI', path: '.amp/skills', active: true });
-  }
-  if (hasFile('codex.md') || hasFile('AGENTS.md')) {
-    env.detectedAgents.push({ id: 'codex', name: 'OpenAI Codex', path: '.agents/skills', active: true });
-  }
-  if (hasFile('.github/copilot-instructions.md')) {
-    env.detectedAgents.push({ id: 'copilot', name: 'GitHub Copilot', path: '.agents/skills', active: true });
-  }
-  if (hasFile('.openclaw') || hasFile('.clawdbot')) {
-    env.detectedAgents.push({ id: 'openclaw', name: 'OpenClaw Agent', path: '.openclaw/skills', active: true });
-  }
-  if (hasFile('.vscode')) {
-    env.detectedAgents.push({ id: 'vscode', name: 'VS Code Native', path: '.agents/skills', active: false });
+  // 18+ Agentic IDE Detection Matrix
+  for (const plat of AGENT_PLATFORMS) {
+    const isDetected = plat.signatures.some(sig => hasFile(sig));
+    if (isDetected) {
+      env.detectedAgents.push({
+        id: plat.id,
+        name: plat.name,
+        path: plat.path,
+        fullPath: path.join(targetDir, plat.path),
+        active: true
+      });
+    }
   }
 
   // Deduplicate recommendations
@@ -239,7 +244,7 @@ function promptQuestion(query) {
 
 // ─── Install a Specific Skill with Dual-Channel Fallback ───────────
 async function installSingleSkill(skillId, targetLocations) {
-  let cleanId = skillId.replace(/^@alwkala\//, '');
+  let cleanId = skillId.replace(/^@tidyfactor\//, '').replace(/^@alwkala\//, '');
   if (!cleanId.startsWith('tidyfactor-') && COMMUNITY_SKILLS.some(s => s.id === `tidyfactor-${cleanId}`)) {
     cleanId = `tidyfactor-${cleanId}`;
   }
@@ -262,10 +267,10 @@ async function installSingleSkill(skillId, targetLocations) {
     return true;
   }
 
-  // Strategy 2 (Primary Network): Official NPM / NPX Package Runner
+  // Strategy 2 (Primary Network): Official NPM / NPX Package Runner (@tidyfactor/<skill>)
   let npmSuccess = false;
   try {
-    execSync(`npx -y @alwkala/${cleanId} add-skill`, { stdio: 'ignore', timeout: 20000 });
+    execSync(`npx -y @tidyfactor/${cleanId.replace('tidyfactor-', '')} add-skill`, { stdio: 'ignore', timeout: 20000 });
     
     // Check where it installed and sync to all other selected targets
     const defaultWorkspaceDir = path.join(process.cwd(), '.agents', 'skills', cleanId);
@@ -278,7 +283,7 @@ async function installSingleSkill(skillId, targetLocations) {
         }
       }
       npmSuccess = true;
-      console.log(`${color.green('✔')} ${color.cyan('[NPM Registry]')}`);
+      console.log(`${color.green('✔')} ${color.cyan('[NPM Registry: @tidyfactor]')}`);
       return true;
     }
   } catch (_) {
@@ -354,45 +359,63 @@ async function runInteractiveWizard() {
   console.log(`│ • Tech Stack:  ${color.green(color.bold(env.projectType))} ${color.dim(`(${env.frameworks.join(', ') || 'General'})`)}`);
   
   if (env.detectedAgents.length > 0) {
-    console.log(`│ • AI Agents:   ${env.detectedAgents.map(a => color.yellow(a.name)).join(', ')}`);
+    console.log(`│ • AI Agents:   ${env.detectedAgents.map(a => color.yellow(`${a.name} (${a.path})`)).join('\n│                ')}`);
   } else {
-    console.log(`│ • AI Agents:   ${color.dim('None detected (will default to .agents/skills/)')}`);
+    console.log(`│ • AI Agents:   ${color.dim('Universal Workspace Mode (.agents/skills/)')}`);
   }
   console.log(color.cyan('└─────────────────────────────────────────────────────────────┘'));
 
   // Target IDE Agent Mount Matrix
-  console.log(color.cyan('\n┌── [Step 2/3] Choose Target IDE Agent(s) ────────────────────┐'));
-  console.log(`│  ${color.green('1)')} ${color.bold('Current Workspace')}   ${color.cyan('.agents/skills/')}  ${color.yellow('(Antigravity, Codex, OpenClaw)')}`);
-  console.log(`│  ${color.green('2)')} ${color.bold('Cursor IDE')}          ${color.cyan('.cursor/skills/')}  ${color.dim('(Cursor rules auto-load)')}`);
-  console.log(`│  ${color.green('3)')} ${color.bold('Claude Code')}         ${color.cyan('.claude/skills/')}  ${color.dim('(Claude project memory)')}`);
-  console.log(`│  ${color.green('4)')} ${color.bold('Windsurf Cascade')}    ${color.cyan('.windsurf/skills/')}${color.dim('(Windsurf project skills)')}`);
-  console.log(`│  ${color.green('5)')} ${color.bold('Cline / VS Code')}     ${color.cyan('.cline/skills/')}   ${color.dim('(Cline custom skills)')}`);
-  console.log(`│  ${color.green('6)')} ${color.bold('Global User Hub')}     ${color.cyan('~/.gemini/config/skills/')} ${color.dim('(Cross-project)')}`);
-  console.log(`│  ${color.green('7)')} ⚡ ${color.bold('Auto Multi-Mount')}   ${color.magenta('Mount to ALL active agents simultaneously')}`);
+  console.log(color.cyan('\n┌── [Step 2/3] Choose Target Agentic IDE(s) ──────────────────┐'));
+  console.log(`│  ${color.green('1)')} ${color.bold('Universal Default')}      ${color.cyan('.agents/skills/')}     ${color.yellow('(Antigravity, Codex)')}`);
+  console.log(`│  ${color.green('2)')} ${color.bold('Trae AI IDE')}            ${color.cyan('.trae/skills/')}       ${color.dim('(ByteDance AI IDE)')}`);
+  console.log(`│  ${color.green('3)')} ${color.bold('Cursor IDE')}             ${color.cyan('.cursor/skills/')}     ${color.dim('(Cursor rules & skills)')}`);
+  console.log(`│  ${color.green('4)')} ${color.bold('Windsurf Cascade')}       ${color.cyan('.windsurf/skills/')}   ${color.dim('(Codeium Cascade)')}`);
+  console.log(`│  ${color.green('5)')} ${color.bold('GitHub Copilot')}         ${color.cyan('.github/prompts/')}    ${color.dim('(Copilot workspace instructions)')}`);
+  console.log(`│  ${color.green('6)')} ${color.bold('RooCode')}                ${color.cyan('.roo/skills/')}        ${color.dim('(Roo Cline rules)')}`);
+  console.log(`│  ${color.green('7)')} ${color.bold('OpenCode / Zen')}         ${color.cyan('.opencode/skills/')}   ${color.dim('(OpenCode Agent)')}`);
+  console.log(`│  ${color.green('8)')} ${color.bold('KiloCode')}               ${color.cyan('.kilocode/skills/')}   ${color.dim('(Kilo Code agent)')}`);
+  console.log(`│  ${color.green('9)')} ${color.bold('Warp Terminal')}          ${color.cyan('.warp/skills/')}       ${color.dim('(Warp agentic workflows)')}`);
+  console.log(`│  ${color.green('10)')} ${color.bold('Kiro Spec IDE')}         ${color.cyan('.kiro/skills/')}       ${color.dim('(AWS Kiro steering)')}`);
+  console.log(`│  ${color.green('11)')} ${color.bold('Claude Code')}           ${color.cyan('.claude/skills/')}     ${color.dim('(Claude project memory)')}`);
+  console.log(`│  ${color.green('12)')} ${color.bold('Zed AI Agent')}           ${color.cyan('.zed/skills/')}        ${color.dim('(Zed Agent settings)')}`);
+  console.log(`│  ${color.green('13)')} ${color.bold('JetBrains AI')}          ${color.cyan('.jetbrains/skills/')}  ${color.dim('(IDEA/Junie/PyCharm)')}`);
+  console.log(`│  ${color.green('14)')} ${color.bold('Global User Hub')}        ${color.cyan('~/.gemini/config/skills/')} ${color.dim('(Cross-project)')}`);
+  console.log(`│  ${color.green('15)')} ⚡ ${color.bold('Auto Multi-Mount')}      ${color.magenta('Mount to ALL detected/active agents simultaneously')}`);
   console.log(color.cyan('└─────────────────────────────────────────────────────────────┘'));
   
-  const targetChoice = await promptQuestion(`\nSelect Target IDE [1-7, default: 1]: `);
+  const targetChoice = await promptQuestion(`\nSelect Target IDE [1-15, default: 1]: `);
   
   let targetPaths = [];
-  if (targetChoice === '2') {
-    targetPaths.push(path.join(cwd, '.cursor', 'skills'));
-  } else if (targetChoice === '3') {
-    targetPaths.push(path.join(cwd, '.claude', 'skills'));
-  } else if (targetChoice === '4') {
-    targetPaths.push(path.join(cwd, '.windsurf', 'skills'));
-  } else if (targetChoice === '5') {
-    targetPaths.push(path.join(cwd, '.cline', 'skills'));
-  } else if (targetChoice === '6') {
-    targetPaths.push(path.join(os.homedir(), '.gemini', 'config', 'skills'));
-  } else if (targetChoice === '7') {
-    targetPaths.push(path.join(cwd, '.agents', 'skills'));
-    if (env.detectedAgents.some(a => a.id === 'cursor')) targetPaths.push(path.join(cwd, '.cursor', 'skills'));
-    if (env.detectedAgents.some(a => a.id === 'claude')) targetPaths.push(path.join(cwd, '.claude', 'skills'));
-    if (env.detectedAgents.some(a => a.id === 'windsurf')) targetPaths.push(path.join(cwd, '.windsurf', 'skills'));
-    if (env.detectedAgents.some(a => a.id === 'cline')) targetPaths.push(path.join(cwd, '.cline', 'skills'));
-    targetPaths.push(path.join(os.homedir(), '.gemini', 'config', 'skills'));
-  } else {
-    targetPaths.push(path.join(cwd, '.agents', 'skills'));
+  switch (targetChoice) {
+    case '2': targetPaths.push(path.join(cwd, '.trae', 'skills')); break;
+    case '3': targetPaths.push(path.join(cwd, '.cursor', 'skills')); break;
+    case '4': targetPaths.push(path.join(cwd, '.windsurf', 'skills')); break;
+    case '5': targetPaths.push(path.join(cwd, '.github', 'prompts')); break;
+    case '6': targetPaths.push(path.join(cwd, '.roo', 'skills')); break;
+    case '7': targetPaths.push(path.join(cwd, '.opencode', 'skills')); break;
+    case '8': targetPaths.push(path.join(cwd, '.kilocode', 'skills')); break;
+    case '9': targetPaths.push(path.join(cwd, '.warp', 'skills')); break;
+    case '10': targetPaths.push(path.join(cwd, '.kiro', 'skills')); break;
+    case '11': targetPaths.push(path.join(cwd, '.claude', 'skills')); break;
+    case '12': targetPaths.push(path.join(cwd, '.zed', 'skills')); break;
+    case '13': targetPaths.push(path.join(cwd, '.jetbrains', 'skills')); break;
+    case '14': targetPaths.push(path.join(os.homedir(), '.gemini', 'config', 'skills')); break;
+    case '15':
+      targetPaths.push(path.join(cwd, '.agents', 'skills'));
+      if (env.detectedAgents.length > 0) {
+        env.detectedAgents.forEach(a => targetPaths.push(path.join(cwd, a.path)));
+      } else {
+        targetPaths.push(path.join(cwd, '.cursor', 'skills'));
+        targetPaths.push(path.join(cwd, '.windsurf', 'skills'));
+        targetPaths.push(path.join(cwd, '.trae', 'skills'));
+        targetPaths.push(path.join(cwd, '.roo', 'skills'));
+      }
+      targetPaths.push(path.join(os.homedir(), '.gemini', 'config', 'skills'));
+      break;
+    default:
+      targetPaths.push(path.join(cwd, '.agents', 'skills'));
+      break;
   }
 
   // Deduplicate target paths
@@ -485,10 +508,11 @@ async function runInteractiveWizard() {
   console.log(color.cyan('═════════════════════════════════════════════════════════════════════════════'));
   
   console.log(color.bold('\n💡 How to use with your AI Coding Agents:\n'));
-  console.log(`  • ${color.bold('Google Antigravity / Gemini')}: Skills are instantly loaded from ${color.yellow('.agents/skills/')}`);
-  console.log(`  • ${color.bold('Cursor IDE & Windsurf')}:       Use slash commands like ${color.cyan('/hero')}, ${color.cyan('/component')} in chat`);
-  console.log(`  • ${color.bold('Claude Code')}:                 Ask Claude to apply the skill (e.g. "Use tidyfactor-styler to redesign this hero")`);
-  console.log(`  • ${color.bold('OpenAI Codex / Cline')}:        Directly referenced in agent workspace memory\n`);
+  console.log(`  • ${color.bold('Trae / Cursor / Windsurf')}: Use slash commands like ${color.cyan('/hero')}, ${color.cyan('/component')} in chat`);
+  console.log(`  • ${color.bold('Google Antigravity / Gemini')}: Loaded directly from ${color.yellow('.agents/skills/')}`);
+  console.log(`  • ${color.bold('GitHub Copilot')}:             Instructions active in ${color.yellow('.github/prompts/')}`);
+  console.log(`  • ${color.bold('RooCode / KiloCode / OpenCode')}: Native skills mounted in project folder`);
+  console.log(`  • ${color.bold('Warp Terminal')}:               Workflows and prompt context in ${color.yellow('.warp/skills/')}\n`);
 
   console.log(color.bold('🔥 Quick Triggers & Commands Installed:'));
   skillsToInstall.forEach(sId => {
@@ -538,23 +562,42 @@ async function main() {
   if (command === 'add' || command === 'install') {
     const skillArg = args[1];
     const isAll = args.includes('--all') || skillArg === 'all';
-    const isCursor = args.includes('--cursor');
-    const isClaude = args.includes('--claude');
-    const isWindsurf = args.includes('--windsurf');
-    const isCline = args.includes('--cline');
-    const isGlobal = args.includes('--global') || args.includes('-g');
     
+    // Target flags mapping
     let targets = [];
-    if (isCursor) targets.push(path.join(process.cwd(), '.cursor', 'skills'));
-    else if (isClaude) targets.push(path.join(process.cwd(), '.claude', 'skills'));
-    else if (isWindsurf) targets.push(path.join(process.cwd(), '.windsurf', 'skills'));
-    else if (isCline) targets.push(path.join(process.cwd(), '.cline', 'skills'));
-    else if (isGlobal) targets.push(path.join(os.homedir(), '.gemini', 'config', 'skills'));
-    else targets.push(path.join(process.cwd(), '.agents', 'skills'));
+    if (args.includes('--trae')) targets.push(path.join(process.cwd(), '.trae', 'skills'));
+    if (args.includes('--cursor')) targets.push(path.join(process.cwd(), '.cursor', 'skills'));
+    if (args.includes('--windsurf')) targets.push(path.join(process.cwd(), '.windsurf', 'skills'));
+    if (args.includes('--copilot')) targets.push(path.join(process.cwd(), '.github', 'prompts'));
+    if (args.includes('--roo') || args.includes('--roocode')) targets.push(path.join(process.cwd(), '.roo', 'skills'));
+    if (args.includes('--opencode')) targets.push(path.join(process.cwd(), '.opencode', 'skills'));
+    if (args.includes('--kilocode') || args.includes('--kilo')) targets.push(path.join(process.cwd(), '.kilocode', 'skills'));
+    if (args.includes('--warp')) targets.push(path.join(process.cwd(), '.warp', 'skills'));
+    if (args.includes('--kiro')) targets.push(path.join(process.cwd(), '.kiro', 'skills'));
+    if (args.includes('--claude')) targets.push(path.join(process.cwd(), '.claude', 'skills'));
+    if (args.includes('--zed')) targets.push(path.join(process.cwd(), '.zed', 'skills'));
+    if (args.includes('--jetbrains') || args.includes('--idea')) targets.push(path.join(process.cwd(), '.jetbrains', 'skills'));
+    if (args.includes('--blackbox')) targets.push(path.join(process.cwd(), '.blackbox', 'skills'));
+    if (args.includes('--cline')) targets.push(path.join(process.cwd(), '.cline', 'skills'));
+    if (args.includes('--amp')) targets.push(path.join(process.cwd(), '.amp', 'skills'));
+    if (args.includes('--openclaw')) targets.push(path.join(process.cwd(), '.openclaw', 'skills'));
+    if (args.includes('--global') || args.includes('-g')) targets.push(path.join(os.homedir(), '.gemini', 'config', 'skills'));
+    
+    if (args.includes('--all-agents')) {
+      AGENT_PLATFORMS.forEach(p => targets.push(path.join(process.cwd(), p.path)));
+      targets.push(path.join(os.homedir(), '.gemini', 'config', 'skills'));
+    }
+
+    // Default target if none specified
+    if (targets.length === 0) {
+      targets.push(path.join(process.cwd(), '.agents', 'skills'));
+    }
+
+    targets = [...new Set(targets)];
 
     if (isAll) {
       printBanner();
-      console.log(color.bold(`📦 Installing Full Master Suite (12 Skills)...\n`));
+      console.log(color.bold(`📦 Installing Full Master Suite (12 Skills) into ${targets.length} target(s)...\n`));
       for (const s of COMMUNITY_SKILLS) {
         await installSingleSkill(s.id, targets);
       }
@@ -594,11 +637,11 @@ async function main() {
   if (command === 'doctor' || command === 'check') {
     printBanner();
     const env = detectProjectEnvironment(process.cwd());
-    console.log(color.bold('🩺 Workspace Diagnostics & Agent Readiness:'));
+    console.log(color.bold('🩺 Workspace Diagnostics & 18+ Agent Readiness:'));
     console.log(`  • Workspace Path:     ${color.cyan(env.cwd)}`);
     console.log(`  • Detected Stack:     ${color.green(color.bold(env.projectType))} ${color.dim(`(${env.frameworks.join(', ') || 'None'})`)}`);
     console.log(`  • Recommended Skills: ${color.yellow(env.recommendedSkillIds.join(', '))}`);
-    console.log(`  • Active Agents:      ${env.detectedAgents.length > 0 ? env.detectedAgents.map(a => `${a.name} (${a.path})`).join(', ') : color.dim('None (default .agents/skills ready)')}`);
+    console.log(`  • Active Agents:      ${env.detectedAgents.length > 0 ? env.detectedAgents.map(a => `${a.name} (${color.cyan(a.path)})`).join('\n                        ') : color.dim('Universal Mode (.agents/skills ready)')}`);
     console.log(`  • Registry Host:      ${color.cyan(REGISTRY_HOST)} (${REGISTRY_API_PATH})\n`);
     return;
   }
@@ -616,11 +659,24 @@ ${color.bold('USAGE:')}
   ${color.green('npx @tidyfactor/cli add --all')}        # Install entire 12-skill master suite
   ${color.green('npx @tidyfactor/cli doctor')}           # Workspace diagnostics & agent check
 
-${color.bold('IDE TARGET FLAGS:')}
+${color.bold('IDE TARGET FLAGS (18+ SUPPORTED):')}
+  ${color.cyan('--trae')}                                    # Mount to .trae/skills/
   ${color.cyan('--cursor')}                                  # Mount to .cursor/skills/
-  ${color.cyan('--claude')}                                  # Mount to .claude/skills/
   ${color.cyan('--windsurf')}                                # Mount to .windsurf/skills/
+  ${color.cyan('--copilot')}                                 # Mount to .github/prompts/
+  ${color.cyan('--roo, --roocode')}                          # Mount to .roo/skills/
+  ${color.cyan('--opencode')}                                # Mount to .opencode/skills/
+  ${color.cyan('--kilocode, --kilo')}                        # Mount to .kilocode/skills/
+  ${color.cyan('--warp')}                                    # Mount to .warp/skills/
+  ${color.cyan('--kiro')}                                    # Mount to .kiro/skills/
+  ${color.cyan('--claude')}                                  # Mount to .claude/skills/
+  ${color.cyan('--zed')}                                     # Mount to .zed/skills/
+  ${color.cyan('--jetbrains')}                               # Mount to .jetbrains/skills/
+  ${color.cyan('--blackbox')}                                # Mount to .blackbox/skills/
   ${color.cyan('--cline')}                                   # Mount to .cline/skills/
+  ${color.cyan('--amp')}                                     # Mount to .amp/skills/
+  ${color.cyan('--openclaw')}                                # Mount to .openclaw/skills/
+  ${color.cyan('--all-agents')}                              # Mount to ALL active agents simultaneously
   ${color.cyan('--global, -g')}                              # Mount to global ~/.gemini/config/skills/
 `);
 }
