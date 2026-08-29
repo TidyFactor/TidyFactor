@@ -1,6 +1,6 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.5.0",
+  "suite_version": "1.6.0",
   "release_date": "2026-08-29",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
@@ -8,86 +8,86 @@
   "skills": [
     {
       "id": "tidyfactor-cinematic",
-      "name": "Cinematic",
+      "name": "TidyFactor Cinematic",
       "version": "3.6.0",
-      "description": "TidyFactor Cinematic — Scroll-Driven Luxury Experience Engine — Apple × Cartier Aesthetic for AI Agents",
+      "description": "TidyFactor Cinematic \u2014 Scroll-Driven Luxury Experience Engine \u2014 Apple \u00d7 Cartier Aesthetic for AI Agents",
       "archive": "tidyfactor-cinematic.skill"
     },
     {
       "id": "tidyfactor-design",
-      "name": "Design",
+      "name": "TidyFactor Design",
       "version": "1.5.0",
-      "description": "TidyFactor Design track — code-native UI design lifecycle engine (Figma alternative) with Contextual Decision Layer (CDL)",
+      "description": "TidyFactor Design track \u2014 code-native UI design lifecycle engine (Figma alternative) with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-design.skill"
     },
     {
       "id": "tidyfactor-doc",
-      "name": "Doc",
+      "name": "TidyFactor Doc",
       "version": "1.3.0",
-      "description": "TidyFactor Doc — Code Documentation Builder & Dual-Engine Publishing Platform (MkDocs Material & Docsify) for AI Coding Agents",
+      "description": "TidyFactor Doc \u2014 Code Documentation Builder & Dual-Engine Publishing Platform (MkDocs Material & Docsify) for AI Coding Agents",
       "archive": "tidyfactor-doc.skill"
     },
     {
       "id": "tidyfactor-github",
-      "name": "Github",
+      "name": "TidyFactor GitHub",
       "version": "1.3.0",
-      "description": "TidyFactor GitHub — GitHub Platform Operations, Governance, Content, Experience & Intelligence Engine for AI Coding Agents",
+      "description": "TidyFactor GitHub \u2014 GitHub Platform Operations, Governance, Content, Experience & Intelligence Engine for AI Coding Agents",
       "archive": "tidyfactor-github.skill"
     },
     {
       "id": "tidyfactor-html",
-      "name": "Html",
+      "name": "TidyFactor HTML",
       "version": "1.2.0",
-      "description": "TidyFactor HTML track — 100% static HTML/CSS/JS platform starter with Contextual Decision Layer (CDL)",
+      "description": "TidyFactor HTML track \u2014 100% static HTML/CSS/JS platform starter with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-html.skill"
     },
     {
       "id": "tidyfactor-htmx",
-      "name": "Htmx",
+      "name": "TidyFactor HTMX",
       "version": "1.2.0",
-      "description": "TidyFactor HTMX track — Server-Driven Hypermedia Interactivity with Contextual Decision Layer (CDL)",
+      "description": "TidyFactor HTMX track \u2014 Server-Driven Hypermedia Interactivity with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-htmx.skill"
     },
     {
       "id": "tidyfactor-js",
-      "name": "Js",
+      "name": "TidyFactor JS",
       "version": "1.2.0",
-      "description": "TidyFactor Vanilla JS track — Framework-Free Reactive Vanilla SPA with Contextual Decision Layer (CDL)",
+      "description": "TidyFactor Vanilla JS track \u2014 Framework-Free Reactive Vanilla SPA with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-js.skill"
     },
     {
       "id": "tidyfactor-marketing",
-      "name": "Marketing",
+      "name": "TidyFactor Marketing",
       "version": "1.3.0",
-      "description": "TidyFactor Marketing — AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
+      "description": "TidyFactor Marketing \u2014 AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-marketing.skill"
     },
     {
       "id": "tidyfactor-next",
-      "name": "Next",
+      "name": "TidyFactor Next.js",
       "version": "1.4.0",
-      "description": "TidyFactor Next.js track — production-grade multi-tenant SaaS on Next.js 16, React 19, TypeScript strict, and Supabase with CDL Contextual Decision Layer",
+      "description": "TidyFactor Next.js track \u2014 production-grade multi-tenant SaaS on Next.js 16, React 19, TypeScript strict, and Supabase with CDL Contextual Decision Layer",
       "archive": "tidyfactor-next.skill"
     },
     {
       "id": "tidyfactor-php",
-      "name": "Php",
+      "name": "TidyFactor PHP",
       "version": "1.2.0",
-      "description": "TidyFactor PHP Mono track — Modern Server-Rendered Modular Monolith (Flight + Medoo + Plates) with Contextual Decision Layer (CDL)",
+      "description": "TidyFactor PHP Mono track \u2014 Modern Server-Rendered Modular Monolith (Flight + Medoo + Plates) with Contextual Decision Layer (CDL)",
       "archive": "tidyfactor-php.skill"
     },
     {
       "id": "tidyfactor-skill-architect",
-      "name": "Skill Architect",
+      "name": "TidyFactor Skill Architect",
       "version": "2.1.0",
-      "description": "TidyFactor Skill Architect — Governance Layer & Methodology Engine for AI Coding Agent Skills",
+      "description": "TidyFactor Skill Architect \u2014 Governance Layer & Methodology Engine for AI Coding Agent Skills",
       "archive": "tidyfactor-skill-architect.skill"
     },
     {
       "id": "tidyfactor-styler",
-      "name": "Styler",
+      "name": "TidyFactor Styler",
       "version": "1.2.0",
-      "description": "TidyFactor Styler — Production Framework Styler, Section Redesign & RTL Polish Engine",
+      "description": "TidyFactor Styler \u2014 Production Framework Styler, Section Redesign & RTL Polish Engine",
       "archive": "tidyfactor-styler.skill"
     }
   ]
