@@ -16,7 +16,7 @@ const os = require('os');
 const { execSync } = require('child_process');
 const readline = require('readline');
 
-const VERSION = '1.5.0';
+const VERSION = '1.5.1';
 const REGISTRY_HOST = process.env.TIDYFACTOR_REGISTRY_HOST || 'tidyfactor.com';
 const REGISTRY_API_PATH = '/api/v1/skills';
 

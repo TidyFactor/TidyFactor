@@ -1,5 +1,19 @@
 # CHANGELOG — TidyFactor Skills Suite
 
+## TidyFactor Skills Suite v1.5.1
+
+Official omni-channel release introducing native multi-platform standalone installers (Linux, macOS, Windows), 10+ AI Agent IDE discovery & mounting matrix, 5 curated workflow packs, and self-hosted API endpoints.
+
+### 🌟 Release Highlights (v1.5.1)
+- **Standalone Linux & macOS Shell Engine (`install.sh`)**: Direct piped installation via `curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash` with `/dev/tty` interactive input support and multi-tool extraction fallback (`unzip`, `python3 zipfile`, `tar`).
+- **Standalone Windows PowerShell Engine (`install.ps1`)**: Direct execution via `irm https://tidyfactor.com/api/v1/install.ps1 | iex` with pure ASCII syntax, auto-flattening, and zero Node.js dependency.
+- **10+ AI Agent IDE Mounting Matrix**: Automated discovery and multi-mount support across Google Antigravity, Cursor IDE, Claude Code, Windsurf Cascade, Cline, OpenAI Codex, GitHub Copilot, AMP AI, OpenClaw, and VS Code.
+- **Official Workflow Packs**: Support for `pack:design`, `pack:saas`, `pack:engineering`, `pack:governance`, and `pack:growth` across CLI, Shell installers, and API.
+- **Self-Hosted API Endpoints**: Live endpoints `/api/v1/packs` and `/api/v1/skills/search` served directly from `tidyfactor.com`.
+- **Enhanced 3-Step Interactive TUI Wizard**: Redesigned modern box-art UI with environment detection, target agent selection, 9 package options, and post-install command cheat-sheets.
+
+---
+
 ## TidyFactor Skills Suite v1.5.0
 
 Official master bundle release containing all 12 production AI Coding Agent Skills for Google Antigravity, Claude Code, Cursor, Codex, and Windsurf.
