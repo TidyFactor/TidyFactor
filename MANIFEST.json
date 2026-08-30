@@ -1,7 +1,7 @@
 {
   "suite_name": "TidyFactor Skills Suite",
-  "suite_version": "1.7.0",
-  "release_date": "2026-08-29",
+  "suite_version": "1.8.0",
+  "release_date": "2026-08-30",
   "license": "Apache-2.0",
   "homepage": "https://tidyfactor.com",
   "skills_count": 12,
