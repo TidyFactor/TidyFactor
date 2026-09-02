@@ -1,157 +1,120 @@
-<div dir="rtl">
+<div align="center" dir="rtl">
 
-<div align="center">
+# ⚡ منظومة تايدي فاكتور المعمارية (TidyFactor Architecture Ecosystem)
+### هندسة الويب الأصلية للذكاء الاصطناعي، أنظمة التصميم، ومهارات الوكلاء البرمجيين
 
-# ⚡ المنظومة المعمارية لـ TidyFactor
-### بنية الويب الأصلية للذكاء الاصطناعي، ونظم التصميم، ومهارات الوكلاء
-**أسس برمجية معيارية، حتمية، وعالية الكفاءة في استهلاك السياق لبيئات العمل المشترك بين الإنسان ووكلاء الذكاء الاصطناعي.**
+**بناء برمجيات مستدامة، قطعية، ونموذجية لعصر التعاون بين المطورين والوكلاء الأذكياء.**
 
-[![الموقع الرسمي](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
-[![التوثيق الفني](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
+[![Official Website](https://img.shields.io/badge/Website-tidyfactor.com-000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tidyfactor.com)
+[![Documentation](https://img.shields.io/badge/Docs-Documentation-blue.svg?style=for-the-badge&logo=gitbook&logoColor=white)](https://tidyfactor.com/documentation)
 [![NPM Organization](https://img.shields.io/badge/NPM-@alwkala-CB3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/org/tidyfactor)
-[![الترخيص: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
-[![الإصدار v1.6.0](https://img.shields.io/badge/Release-v1.6.0-emerald.svg?style=for-the-badge)](https://github.com/TidyFactor/TidyFactor/releases/latest)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Location](https://img.shields.io/badge/Location-Cairo,%20Egypt-emerald.svg?style=for-the-badge&logo=google-maps&logoColor=white)](https://tidyfactor.com)
 
 [ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
-<br/>
-
-```bash
-# تشغيل المعالج التفاعلي الشامل عبر 10+ بيئات لوكلاء الذكاء الاصطناعي
-npx @tidyfactor/cli init
-```
-
-<br/>
+<br/><br/>
 
 <p align="center">
-  <img src="assets/cli-interactive-wizard.png" alt="معالج الإعداد التفاعلي لـ TidyFactor" width="48%" style="border-radius: 8px; vertical-align: top; margin: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
-  <img src="assets/agent-slash-commands.png" alt="الإكمال التلقائي لأوامر المهارات داخل محرر الكود" width="48%" style="border-radius: 8px; vertical-align: top; margin: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+  <img src="assets/hero-banner.png" alt="TidyFactor Architecture Ecosystem Hero Banner" width="100%" />
 </p>
 
 </div>
 
 ---
 
-## 🌟 لماذا توجد TidyFactor؟
+## 🌟 لماذا تم تأسيس منظومة تايدي فاكتور (TidyFactor)؟
 
-لقد تغيرت أسس تطوير الويب. لم يعد الذكاء الاصطناعي مجرد أداة لتسريع الكتابة، بل أعاد تشكيل طريقة بناء البرمجيات واستيعابها وصيانتها.
+لقد تغيرت بنية الويب جذرياً. لم يقتصر دور الذكاء الاصطناعي على تسريع تطوير البرمجيات فحسب — بل غيّر بشكل جوهري طريقة إنشاء البرمجيات، وفهمها، وصيانتها، وتطويرها.
 
-تحتاج الأجيال القادمة من منصات الويب إلى بنية مصممة خصيصاً للتعاون الحتمي بين **المطورين البشريين ونماذج الذكاء الاصطناعي ووكلاء البرمجة الذاتية** (*Google Antigravity, Claude Code, Cursor, Codex, Windsurf, Cline*).
+تم تصميم حزمة الويب التقليدية حصرياً للبشر الذين يكتبون الكود يدوياً. أما الجيل القادم من منصات الويب فيجب تصميمه ليتيح التعاون السلس والفوري بين المطورين، نماذج الذكاء الاصطناعي، ووكلاء البرمجة الذاتية (Google Antigravity و Claude Code و Cursor و Codex و Windsurf).
 
-توفر **TidyFactor** موجهات مهارات خفيفة (~350 توكن)، وذاكرة تشغيلية متخصصة، ومعايير فحص صارمة قبل التوليد، ومنصات تشغيل متكاملة بدون تشتت في ذاكرة النماذج (Context Degradation).
+توفر منظومة تايدي فاكتور (TidyFactor) الأسس المعمارية، ومهارات الوكلاء المحددة، وقواعد الكود المعيارية لجعل هذا الواقع موثوقاً، آمناً، وجاهزاً للإنتاج.
 
 ---
 
-## ⚡ طرق التثبيت السريع عبر المنصات المتعددة
+## 🏛️ Ecosystem Architecture (12 Official Skills)
 
-### 1. عبر سطر أوامر Node.js (NPX) — بنية مزدوجة الحماية (NPM + Direct CDN)
-```bash
-# تشغيل معالج الإعداد التفاعلي ثلاثي المراحل
-npx @tidyfactor/cli init
-
-# تثبيت باقة عمل مخصصة
-npx @tidyfactor/cli add pack:design
-npx @tidyfactor/cli add pack:saas
-
-# تثبيت مهارة محددة مع توجيه بيئة الـ IDE
-npx @tidyfactor/cli add tidyfactor-styler --cursor
-npx @tidyfactor/cli add tidyfactor-cinematic --claude
-npx @tidyfactor/cli add tidyfactor-skill-architect --global
-
-# فحص صحة بيئة العمل واكتشاف الوكلاء النشطين
-npx @tidyfactor/cli doctor
+```
+TidyFactor Organization (github.com/TidyFactor)
+│
+├── 🏛️ Governance & Operations
+│   ├── Skill-Architect → Master Governance  (13 Structural Rules, Dispatcher Discipline & Quality Gate)
+│   └── GitHub          → Platform Intel     (Platform Operations, Rulesets, Actions CI & CX Engine)
+│
+├── 🎨 Design Skills
+│   ├── Cinematic       → Experience / "Wow" (Scroll-Driven Landing Pages Animations)
+│   ├── Design          → Prototype / "Build"(Code-Native UI Design Engine & Figma Alternative)
+│   └── Styler          → Production / "Ship"(Framework Styler & RTL Polish Engine)
+│
+├── ⚡ Core Engineering & Development Skills
+│   ├── HTML            → Static Platform    (Semantic SEO & 100/100 Lighthouse Starter)
+│   ├── HTMX            → Hypermedia         (Server-Driven Micro-Interactions)
+│   ├── JS              → Vanilla SPA        (Framework-Free Reactive ES Modules)
+│   ├── PHP             → Server-Rendered    (Modern PHP 8.x Component Monolith)
+│   └── Next            → Multi-Tenant SaaS  (Next.js 16, React 19, Supabase RLS & Dev-Perf)
+│
+├── 📚 Documentation Skills
+│   └── Doc             → AST Engine         (Codebase Interview, Living Docs & Docsify Builder)
+│
+└── 📈 Growth Skills
+    └── Marketing       → Direct Response    (Campaigns, Pillar SEO & Content Lifecycles)
 ```
 
-### 2. سكربتات التثبيت المستقلة بسطر واحد (بدون الحاجة لـ Node.js)
-```bash
-# أنظمة Linux و macOS (عبر cURL و Bash مع قراءة تفاعلية عبر /dev/tty)
-curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash
-curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- pack:design
-curl -fsSL https://tidyfactor.com/api/v1/install.sh | bash -s -- all
+---
 
-# أنظمة Windows (عبر PowerShell 5.1 و 7+ بنقاء ASCII كامل)
-irm https://tidyfactor.com/api/v1/install.ps1 | iex
-$Skill = 'pack:design'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
-$Skill = 'all'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
-```
+## 💎 الثلاثي البصري والهندسي للواجهات (The Frontend Triad)
 
-> 📖 **المستند الفني الشامل لبنية التوزيع ونقاط الـ REST API:** [DISTRIBUTION.md](DISTRIBUTION.md)
+* **Cinematic (`TidyFactor/Cinematic`)**: Luxury scroll-driven `<canvas>` frame sequence experience.
+* **Design (`TidyFactor/Design`)**: Interactive code-native UI design lifecycle engine and Figma alternative.
+* **Styler (`TidyFactor/Styler`)**: Surgical production framework styler and RTL UI polish engine.
 
 ---
 
-## 📦 باقات مسارات العمل الجاهزة (Workflow Packs)
+## 📦 Skills Matrix & Direct Downloads
 
-| معرف الباقة | اسم الباقة | النطاق والتخصص | أمر التثبيت السريع |
-| :--- | :--- | :--- | :--- |
-| `pack:design` | **باقة التصميم والواجهات** | صفحات الهبوط الفاخرة + استوديو التصميم + محرك الـ RTL | `npx @tidyfactor/cli add pack:design` |
-| `pack:saas` | **باقة تطبيقات الـ SaaS** | محرك Next.js 16 + Supabase RLS + التصميم + التسويق والتوثيق | `npx @tidyfactor/cli add pack:saas` |
-| `pack:engineering` | **باقة الهندسة الكاملة** | مونويلث PHP 8.x + HTMX + سبا Vanilla JS + HTML ثابت | `npx @tidyfactor/cli add pack:engineering` |
-| `pack:governance` | **باقة الحوكمة والعمليات** | معمار المهارات + منصة التوثيق + محرك إدارة GitHub | `npx @tidyfactor/cli add pack:governance` |
-| `pack:growth` | **باقة النمو والتسويق** | محرك التسويق المباشر + الـ SEO + صفحات الهبوط والـ RTL | `npx @tidyfactor/cli add pack:growth` |
+| Category | Skill Identifier | Quick CLI Installation | Direct Download (.skill) |
+| :--- | :--- | :--- | :---: |
+| **Governance** | `tidyfactor-skill-architect` | `npx @tidyfactor/cli-skill-architect add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Skill-Architect/releases/latest/download/tidyfactor-skill-architect.skill) |
+| **Operations** | `tidyfactor-github` | `npx @tidyfactor/cli-github add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/GitHub/releases/latest/download/tidyfactor-github.skill) |
+| **Design** | `tidyfactor-cinematic` | `npx @tidyfactor/cinematic add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Cinematic/releases/latest/download/tidyfactor-cinematic.skill) |
+| **Design** | `tidyfactor-design` | `npx @tidyfactor/cli-design add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Design/releases/latest/download/tidyfactor-design.skill) |
+| **Design** | `tidyfactor-styler` | `npx @tidyfactor/cli-styler add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Styler/releases/latest/download/tidyfactor-styler.skill) |
+| **Engineering** | `tidyfactor-html` | `npx @tidyfactor/cli-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
+| **Engineering** | `tidyfactor-next` | `npx @tidyfactor/cli-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
+| **Engineering** | `tidyfactor-htmx` | `npx @tidyfactor/cli-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
+| **Engineering** | `tidyfactor-js` | `npx @tidyfactor/cli-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
+| **Engineering** | `tidyfactor-php` | `npx @tidyfactor/cli-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
+| **Documentation** | `tidyfactor-doc` | `npx @tidyfactor/cli-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
+| **Growth** | `tidyfactor-marketing` | `npx @tidyfactor/cli-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
 
----
-
-## 🏛️ مصفوفة مهارات المجتمع المعتمدة (12 مهارة)
-
-| التصنيف | معرف المهارة | أوامر الاستدعاء الأساسية | الوصف المعماري | ملف المهارة (.skill) |
-| :--- | :--- | :--- | :--- | :---: |
-| **الحوكمة** | `tidyfactor-skill-architect` | `/init`, `/audit`, `/test`, `/grow` | محرك الحوكمة الشامل ومنهجية الانضباط الهيكلي للمهارات. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skill-architect.skill) |
-| **العمليات** | `tidyfactor-github` | `/audit`, `/oss`, `/ruleset`, `/readme`, `/action` | محرك عمليات وإدارة منصة GitHub وقواعد الفروع وسلاسل الإمداد. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-github.skill) |
-| **التصميم** | `tidyfactor-cinematic` | `/film`, `/brand`, `/hero`, `/theme`, `/perf` | صفحات هبوط فاخرة مدفوعة بالتمرير بتسلسل فريمات Canvas. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-cinematic.skill) |
-| **التصميم** | `tidyfactor-design` | `/study`, `/brief`, `/tokens`, `/palette`, `/layout` | استوديو التصميم بالكود الحي وبديل فيجما للوحات التحكم. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-design.skill) |
-| **التصميم** | `tidyfactor-styler` | `/component`, `/section`, `/redesign`, `/rtl`, `/motion` | مصفف أطر العمل الجاهزة ومحرك صقل الواجهات العربية والـ RTL. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-styler.skill) |
-| **الهندسة** | `tidyfactor-next` | `/brief`, `/init`, `/tenant`, `/rls`, `/auth`, `/api` | محرك SaaS متعدد المستأجرين مبني على Next.js 16 و React 19 و Supabase. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-next.skill) |
-| **الهندسة** | `tidyfactor-php` | `/brief`, `/init`, `/admin`, `/plugins`, `/themes`, `/rbac` | مونوليث PHP 8.x حديث معزز بنظام ملحقات وقوالب وصلاحيات RBAC. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-php.skill) |
-| **الهندسة** | `tidyfactor-htmx` | `/brief`, `/init`, `/fragments`, `/swap`, `/triggers` | محرك التفاعل عالي الكفاءة عبر بروتوكول Hypermedia مع الخوادم. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-htmx.skill) |
-| **الهندسة** | `tidyfactor-js` | `/brief`, `/init`, `/store`, `/compo`, `/route`, `/pages` | تطبيق صفحة واحدة (SPA) تفاعلي خالي من أطر العمل الثقيلة. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-js.skill) |
-| **الهندسة** | `tidyfactor-html` | `/brief`, `/init`, `/compo`, `/pages`, `/assets`, `/seo` | منصة ثابتة 100% تعتمد على Web Components وسرعة 100/100. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-html.skill) |
-| **التوثيق** | `tidyfactor-doc` | `/init`, `/collect`, `/generate`, `/site`, `/mkdocs`, `/docsify` | منصة توثيق المشاريع البرمجية المزدوجة (MkDocs & Docsify). | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-doc.skill) |
-| **النمو** | `tidyfactor-marketing` | `/strategy`, `/content`, `/social`, `/email`, `/advertising` | محرك التسويق المباشر، واستراتيجيات الـ SEO وصناعة المحتوى. | [⬇️ تحميل .skill](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-marketing.skill) |
-
-> 📦 **حزمة الماستر المجمعة للـ 12 مهارة (.zip)**: [⬇️ تحميل مباشر من خادم TidyFactor](https://tidyfactor.com/downloads/tidyfactor-skills-suite.zip) | [مرآة GitHub](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+> 📦 **TidyFactor Skills Suite Bundle**: [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
 
 ---
 
-## 🤖 مصفوفة التوافق مع بيئات وكلاء الذكاء الاصطناعي (10+ IDEs)
+## 🏛️ المبادئ المعمارية الجوهرية الـ 13
 
-تم تصميم وهيكلة جميع مهارات TidyFactor لتكون متوافقة فورياً مع مختلف بيئات المطورين:
-
-| بيئة الوكيل / IDE | مجلد التثبيت والتفعيل | آلية العمل |
-| :--- | :--- | :--- |
-| **Google Antigravity / Gemini** | `.agents/skills/<skill>/` | اكتشاف تلقائي فوري لسياق مساحة العمل |
-| **Cursor IDE** | `.cursor/skills/<skill>/` | تحميل وتفعيل تلقائي لقواعد وأوامر المشروع |
-| **Claude Code** | `.claude/skills/<skill>/` | حقن مباشر للأوامر والذاكرة التشغيلية |
-| **Windsurf Cascade** | `.windsurf/skills/<skill>/` | تنفيذ المهام وقراءة قواعد المنظومة |
-| **Cline / VS Code** | `.cline/skills/<skill>/` | دمج المهارات في أدوات الوكيل المخصصة |
-| **OpenAI Codex** | `.agents/skills/<skill>/` | استيعاب التعليمات والمراجع البرمجية |
-| **البيئة العامة للمستخدم** | `~/.gemini/config/skills/<skill>/` | إتاحة المهارات لجميع المشاريع عالمياً |
-
----
-
-## 🏛️ المبادئ المعمارية الجوهرية الـ 5
-
-1. **كفاءة السياق (Context-Efficiency)**: موجهات مهارات خفيفة (~350 توكن) مع إفصاح تدريجي يمنع الهلوسة ويستدعي الذاكرة عند الحاجة فقط.
-2. **التنفيذ الحتمي (Deterministic Execution)**: منع التعديلات العشوائية عبر تغليف أدوات المترجمات الأصلية (`tsc`, `node`, `git`, OS APIs).
-3. **العزل الأمني المحكم (Locked Tenant Isolation)**: ضبط حدود الأمان على مستوى قاعدة البيانات (PostgreSQL RLS) لمنع أي تسريب للبيانات.
-4. **الأداء القائم على القياس (Evidence-Based Performance)**: القياس قبل التحسين، وفصل اختبارات التشغيل الباردة عن الساخنة بصرامة إحصائية.
-5. **تناظر الكود (Human-Agent Code Symmetry)**: هيكلة برمجية واضحة ومقروءة بنفس الدرجة للمهندسين البشريين ولوكلاء الذكاء الاصطناعي.
+1. **Context-Efficient Architecture**: Agent skills use lightweight dispatchers (~350 tokens) with progressive disclosure.
+2. **Deterministic Execution**: Zero autonomous mass-edit scripts. Toolchains wrap native diagnostics (`tsc`, `node`, `git`, OS APIs).
+3. **Locked Tenant Isolation**: Security boundaries live at the database layer (PostgreSQL RLS).
+4. **Evidence-Based Performance**: Measure before optimizing. Cold/warm benchmark separation with a 20% noise threshold.
+5. **Human-Agent Code Symmetry**: Code structured for instant comprehension by human engineers and AI coding agents.
 
 ---
 
 ## 👨‍💻 المنظمة والتواصل والدعم الرسمي
 
-- 🌐 **الموقع الرسمي:** [https://tidyfactor.com/](https://tidyfactor.com/)
-- 📚 **التوثيق الفني:** [https://tidyfactor.com/documentation](https://tidyfactor.com/documentation)
-- 🤝 **الشريك الرسمي:** [وكالة الوكالة الرقمية (Alwkala Agency)](https://alwkala.com/)
-- 🐙 **منظمة GitHub:** [github.com/TidyFactor](https://github.com/TidyFactor)
-- 📧 **التواصل والاستفسارات:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
-- 📱 **واتساب:** [+20 101 665 6899](https://wa.me/201016656899)
-- 📍 **المقر:** القاهرة، جمهورية مصر العربية
+- 🌐 **Official Website:** [https://tidyfactor.com/](https://tidyfactor.com/)
+- 📚 **Official Documentation:** [https://tidyfactor.com/documentation](https://tidyfactor.com/documentation)
+- 🤝 **Official Partner Website:** [Alwkala Digital Agency](https://alwkala.com/)
+- 🐙 **GitHub Organization:** [github.com/TidyFactor](https://github.com/TidyFactor)
+- 📧 **Business Inquiries:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
+- 📱 **WhatsApp:** [+20 101 665 6899](https://wa.me/201016656899)
+- 📞 **Phone:** +20 101 665 6899
+- 📍 **Location:** Cairo, Egypt
 
 ---
 
-## 📜 الترخيص
+## 📜 الترخيص والمجتمع
 
-تخضع هذه المنظومة لترخيص **Apache License 2.0**. جميع الحقوق محفوظة (c) 2026 [TidyFactor](https://tidyfactor.com) وشريكتها [Alwkala Digital Agency](https://alwkala.com).
-
-</div>
+Distributed under the **Apache License 2.0**. Copyright (c) 2026 [TidyFactor](https://tidyfactor.com) & [Alwkala Digital Agency](https://alwkala.com).

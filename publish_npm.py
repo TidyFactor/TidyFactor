@@ -27,7 +27,7 @@ def main():
         choice = input("\n👉 Enter selection [1, 2, Q]: ").strip()
 
     if choice == "1":
-        print("\n📦 Publishing @tidyfactor/cli from B:\\Dev-Studio\\TidyFactor...")
+        print("\n📦 Publishing @tidyfactor/cli from C:\wamp64\www\TidyFactor\CLI\TidyFactor CLI...")
         subprocess.run("npm publish --access public", shell=True, cwd=str(Path(__file__).parent))
     elif choice == "2":
         if SKILLS_LAB_PUBLISHER.exists():
@@ -39,3 +39,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
