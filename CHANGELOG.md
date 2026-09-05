@@ -1,5 +1,23 @@
 # CHANGELOG — TidyFactor Skills Suite & CLI
 
+## TidyFactor Skills Suite & CLI v2.1.1 (2026-09-05)
+
+Maintenance and ecosystem synchronization release addressing audit findings across CLI command line argument parsing, Windows archive extraction, NTFS junction safety, and cross-suite skill metadata.
+
+### 🛠️ Bug Fixes & Resilience Improvements
+- **Argument & Flag Parsing Order**: Resolved positional argument vs. flags parsing order across `add`, `remove`, `info`, `update`, `use`, `find` so flags (e.g., `--cursor`, `-y`, `--ar`) positioned before skill names or queries are properly parsed without capturing option flags as target identifiers.
+- **Auto-Confirm Logic**: Fixed `isAll` inversion logic bug in `cmdAdd` where `-y` inverted batch installations.
+- **Native Windows Archive Extraction**: Upgraded Windows archive extraction fallback to native .NET `[System.IO.Compression.ZipFile]::ExtractToDirectory` so `.skill` archives extract without PowerShell file extension rejection errors.
+- **Dangling Junction & Symlink Protection**: Protected symlink and NTFS Junction creation against dangling/broken existing links using `fs.lstatSync` prior to creation (preventing `EEXIST` crashes).
+- **Target Flag Expansion & Auto-Detection**: Added explicit `--antigravity`, `--gemini`, `--codex` target flags, and auto-detecting active agents when no flags are supplied.
+- **Self-Copy Guard**: Added guard in `deploySkillToTargets` when source directory equals canonical destination directory.
+- **Ephemeral Temp Cleanup**: Wrapped ephemeral execution in `cmdUse` with a `finally` block to guarantee temp directory cleanup and prevent `%TEMP%` leakage.
+- **Multi-Target Removal**: Expanded `tf remove` to check and clean all 18+ agent directories as well as lockfile-recorded targets.
+- **NPM Package Files**: Added all 8 localized README files (`README.ar.md`, `de`, `es`, `fa`, `fr`, `pt`, `zh`) to `package.json["files"]`.
+- **Ecosystem Synchronization**: Synchronized `tidyfactor-styler` v1.4.1 (with Master Component Pattern Registry and motif overlap prevention rules) across `MANIFEST.json`, `COMMUNITY_SKILLS`, and the master `tidyfactor-skills-suite.zip`.
+
+---
+
 ## TidyFactor Skills Suite & CLI v2.1.0 (2026-09-05)
 
 Minor feature release incorporating Open Agent standard insights (`skills.sh` / Vercel Labs) to deliver supreme developer experience (DX), ephemeral execution, smart skill discovery, and multi-agent canonical filesystem junctions while maintaining zero external dependencies.

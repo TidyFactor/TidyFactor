@@ -1,6 +1,6 @@
 {
   "name": "@tidyfactor/cli",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "TidyFactor — Universal Architecture Ecosystem & Multi-Platform CLI for AI Agent Skills",
   "main": "bin/cli.js",
   "bin": {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * ⚡ TidyFactor CLI v2.1.0 — Universal AI Agent Skills Engine & Interactive Terminal Suite
+ * ⚡ TidyFactor CLI v2.1.1 — Universal AI Agent Skills Engine & Interactive Terminal Suite
  * 
  * Zero-dependency interactive wizard, agentic multi-mounting, context-aware stack detection,
  * resilient quad-channel resolver, governance lockfile, and full native bilingual support (EN/AR).
@@ -22,7 +22,7 @@ const { execSync } = require('child_process');
 const readline = require('readline');
 const crypto = require('crypto');
 
-const VERSION = '2.1.0';
+const VERSION = '2.1.1';
 const REGISTRY_HOST = process.env.TIDYFACTOR_REGISTRY_HOST || 'tidyfactor.com';
 const REGISTRY_API_PATH = '/api/v1/skills';
 
@@ -76,7 +76,7 @@ const COMMUNITY_SKILLS = [
     id: 'tidyfactor-styler',
     name: 'Styler & RTL Engine',
     nameAr: 'محرك الصقل ودعم العربية RTL',
-    version: '1.4.0',
+    version: '1.4.1',
     category: 'design',
     desc: 'Production framework styler and surgical RTL UI polish engine across Next.js, PHP, Vanilla.',
     descAr: 'محرك الصقل البصري الجراحي ودعم العربية الكامل عبر أطر عمل Next.js و PHP و Vanilla.',
