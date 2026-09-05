@@ -1,4 +1,99 @@
-# CHANGELOG — TidyFactor Skills Suite
+# CHANGELOG — TidyFactor Skills Suite & CLI
+
+## TidyFactor Skills Suite & CLI v2.1.0 (2026-09-05)
+
+Minor feature release incorporating Open Agent standard insights (`skills.sh` / Vercel Labs) to deliver supreme developer experience (DX), ephemeral execution, smart skill discovery, and multi-agent canonical filesystem junctions while maintaining zero external dependencies.
+
+### 🏛️ The 7 Core Additions of v2.1.0
+
+1. **⚡ Ephemeral Execution Without Installing (`tf use <skill> [prompt]`)**:
+   - Run any skill ephemerally without polluting project directories or modifying agent configurations.
+   - Outputs clean, pure Markdown prompt directly to `stdout` for effortless pipe composition (`tf use design "Build hero section" | claude`, `tf use design | clip.exe`, `pbcopy`).
+   - Interactive agent spawning with `--agent <name>` (supports Claude Code, Gemini/Antigravity, Cursor, etc.).
+
+2. **🔍 Instant Smart Discovery Engine (`tf find [query]`)**:
+   - Fast keyword and semantic query search across all 13 community skills, 5 curated workflow packs, and Pro suites.
+   - Rich interactive prompt mode when run without arguments (`tf find`).
+   - Supports dual-language filtering with `--ar` and `--en`.
+
+3. **🔗 Multi-Target Canonical Junctions Architecture**:
+   - Eliminates redundant file copying across multiple agent directories.
+   - Installs the canonical skill into `.agents/skills/<skill>`, then transparently mounts secondary agent directories (`.cursor/skills`, `.windsurf/skills`, `.claude/skills`, etc.) using **NTFS Junctions** on Windows (no administrator privileges required) and **Directory Symlinks** on POSIX.
+   - Provides `--copy` flag for explicit deep file copying when symlinks or junctions are not desired or across network/isolated drives.
+
+4. **📂 3-Level Bounded Catalog Discovery**:
+   - Bounded discovery algorithm (maximum depth: 3) prevents accidental infinite recursion on massive workspaces.
+   - Directory shadowing priorities (`skills/` ➜ `.agents/` ➜ `.gemini/`).
+   - `metadata.internal` / `private` gating skips internal sub-modules and draft artifacts cleanly.
+
+5. **🌐 Global Agent Scope (`-g, --global`)**:
+   - Full support for global agent installation targeting user home directories (e.g., `~/.gemini/config/skills/`, `~/.cursor/skills/`, `~/.claude/skills/`).
+   - Strict separation between project-level active agent detection and explicit user global targets.
+
+6. **🤖 18+ Agent Platform Interoperability Matrix**:
+   - Synchronized support across Google Antigravity/Gemini, Claude Code, Cursor, Windsurf, Trae, Codex, GitHub Copilot, Roo Code, Cline, OpenClaw, AMP, VS Code, Zed, Qwen, Amazon Q, JetBrains Junie, Continue, and Void.
+
+7. **🔒 Zero-Dependency Invariant Maintained**:
+   - 100% pure Node.js standard library (`fs`, `path`, `child_process`, `os`, `readline`, `https`).
+   - Instant startup time under 15ms with zero npm security audit alerts.
+
+---
+
+## TidyFactor Skills Suite & CLI v2.0.0 (2026-09-05)
+
+Major architectural release transforming the TidyFactor CLI (`@tidyfactor/cli` and `tf`) into an interactive zero-dependency terminal suite, integrating `tidyfactor-brain` into the official community matrix (13 skills), introducing governance lockfiles (`.tidyfactor/skills.lock`), full native bilingual support (EN/AR), and extended lifecycle commands (`sync`, `outdated`, `update`, `remove`, `info`).
+
+### 🏛️ The 5 Strategic Pillars of v2.0.0
+
+1. **🎨 Terminal Aesthetics (Luxury ASCII Branding)**:
+   - Curved box borders (`╭`, `╮`, `╯`, `╰`), emerald/cyan/amber truecolor palette.
+   - Smooth non-blocking micro-spinners (`⠋ ⠙ ⠹...`) for asynchronous operations.
+   - Real-time download progress bar (`[████████░░░░░░░░] 52% (8.2 MB / 15.7 MB)`) for archive streams.
+   - Structured diagnostic cards with status badges (`✔`, `ℹ`, `✖`, `⚡`).
+
+2. **🕹️ Zero-Dependency Interactive TUI**:
+   - Arrow-key navigable menus (`↑`/`↓`, `k`/`j`) with live fuzzy text search (`type to filter`).
+   - Checkbox multi-select (`[✔]`) with `Space` toggle, `a` (select all), and `i` (invert selection).
+   - Graceful non-interactive fallback (`--yes`, `-y`, CI/CD pipelines, non-TTY environments).
+   - 3-step progress stepper: Environment Discovery ➜ Agent Mount ➜ Skill Package Track.
+
+3. **🛡️ Governance & Lockfile Architecture**:
+   - Official integration of `tidyfactor-brain` (v3.0.0) as the 13th official community skill.
+   - Automated governance lockfile `.tidyfactor/skills.lock` tracking versions, sources, and targets.
+   - Secure atomic folder extraction with Zip Slip path traversal guards.
+   - Lifecycle audit commands: `tf outdated` and `tf update [skill]`.
+
+4. **🎯 Expanded Real-World Use Cases**:
+   - `tf sync`: Auto-detects active agents and synchronizes installed skills across all agent workspaces.
+   - `tf info <skill>`: Displays metadata, slash commands, operational memory, and multi-platform oneliners.
+   - `tf remove <skill>`: Clean uninstallation from all agent folders and lockfile removal.
+   - `tf pro`: Enterprise DevOps (13 skills) and PocketOffice (11 skills) catalog gateway.
+
+5. **🚀 Ergonomics & Native Bilingual Support**:
+   - Dual binary aliases: `tidyfactor` and `tf`.
+   - Full native Arabic (`--ar`) and English (`--en`) interface with runtime auto-detection.
+   - Scripting flags: `--json` (machine-readable), `--dry-run` (simulation), `-g` (global mount).
+   - Quad-channel resilient resolver (Local fast-sync ➜ NPM package runner ➜ CDN `.skill` ➜ GitHub release).
+
+### 📦 Included Skills & Version Matrix (13 Community Skills)
+
+| Skill | Version | Specialization | Direct Download |
+| :--- | :---: | :--- | :---: |
+| **`tidyfactor-brain`** | `v3.0.0` | Brain & Memory OS | [`tidyfactor-brain.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-brain.skill) |
+| **`tidyfactor-cinematic`** | `v3.6.0` | Cinematic Landing | [`tidyfactor-cinematic.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-cinematic.skill) |
+| **`tidyfactor-design`** | `v1.10.0` | Design Studio (CDL) | [`tidyfactor-design.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-design.skill) |
+| **`tidyfactor-doc`** | `v1.5.0` | Doc Platform | [`tidyfactor-doc.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-doc.skill) |
+| **`tidyfactor-github`** | `v1.3.1` | GitHub Platform Engine | [`tidyfactor-github.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-github.skill) |
+| **`tidyfactor-html`** | `v1.2.0` | Static HTML Platform | [`tidyfactor-html.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-html.skill) |
+| **`tidyfactor-htmx`** | `v1.2.0` | HTMX Interactivity | [`tidyfactor-htmx.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-htmx.skill) |
+| **`tidyfactor-js`** | `v1.2.0` | Vanilla JS SPA | [`tidyfactor-js.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-js.skill) |
+| **`tidyfactor-marketing`** | `v1.5.0` | Marketing & SEO | [`tidyfactor-marketing.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-marketing.skill) |
+| **`tidyfactor-next`** | `v1.4.0` | Next.js SaaS Engine | [`tidyfactor-next.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-next.skill) |
+| **`tidyfactor-php`** | `v1.2.0` | PHP Modular Monolith | [`tidyfactor-php.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-php.skill) |
+| **`tidyfactor-skill-architect`** | `v2.6.0` | Skill Architect (Gov) | [`tidyfactor-skill-architect.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-skill-architect.skill) |
+| **`tidyfactor-styler`** | `v1.4.0` | Styler & RTL Engine | [`tidyfactor-styler.skill`](https://github.com/TidyFactor/TidyFactor/releases/download/v2.0.0/tidyfactor-styler.skill) |
+
+---
 
 ## TidyFactor Skills Suite v1.7.0
 

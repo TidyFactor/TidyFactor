@@ -15,7 +15,7 @@ def main():
     print("  🚀 TIDYFACTOR NPM PUBLISHING SUITE (@tidyfactor)")
     print("=" * 65)
     print("  [1] Publish Umbrella CLI package (@tidyfactor/cli)")
-    print("  [2] Open Interactive Skills Publisher (12 Community Skills)")
+    print("  [2] Open Interactive Skills Publisher (13 Community Skills)")
     print("  [Q] Exit")
     print("=" * 65)
     

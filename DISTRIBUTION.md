@@ -26,32 +26,53 @@ graph TD
 
 ---
 
-## ⚡ 1. Universal Command-Line Tool (TidyFactor CLI)
+## ⚡ 1. Universal Command-Line Tool (TidyFactor CLI v2.0)
 
-The unified CLI package provides zero-dependency skill discovery, installation, and environment auditing:
+The unified CLI package provides zero-dependency interactive skill discovery, agentic multi-mounting, governance lockfiles, and environment auditing:
 
-### Instant Execution (NPX)
+### Instant Execution (NPX / Dual Aliases: `tidyfactor` & `tf`)
 ```bash
-# List all 12 registered skills
-npx @tidyfactor/cli list
+# List all 13 registered skills with categories and slash commands
+tf list
 
-# Launch interactive 3-step setup wizard
-npx @tidyfactor/cli init
+# Launch interactive 3-step setup wizard with arrow-key TUI
+tf init
+
+# Force Arabic language interface
+tf init --ar
 
 # Install a skill into your current workspace (.agents/skills/)
-npx @tidyfactor/cli add tidyfactor-cinematic
+tf add cinematic
 
 # Install specifically for Cursor (.cursor/skills/)
-npx @tidyfactor/cli add tidyfactor-styler --cursor
+tf add styler --cursor
 
 # Install globally for Antigravity / Gemini
-npx @tidyfactor/cli add tidyfactor-skill-architect --global
+tf add skill-architect --global
 
-# Inspect skill commands and triggers
-npx @tidyfactor/cli info tidyfactor-marketing
+# Synchronize installed skills across all detected active agents
+tf sync
 
-# Audit active agent skills in your environment
-npx @tidyfactor/cli doctor
+# Audit installed skill versions against registry
+tf outdated
+
+# Upgrade installed skills to latest releases
+tf update
+
+# Safely uninstall a skill and clean lockfile
+tf remove js
+
+# Inspect skill architecture, slash commands and operational memory
+tf info marketing
+
+# Explore Enterprise DevOps & PocketOffice Pro catalog
+tf pro
+
+# Diagnostic health audit & 18+ agent discovery
+tf doctor
+
+# Inspect sovereign tenant identity & memory quota
+tf whoami
 ```
 
 ---
@@ -102,7 +123,7 @@ $Skill = 'pack:design'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 # Install a specific skill
 $Skill = 'tidyfactor-cinematic'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 
-# Install entire Master Suite (all 12 skills)
+# Install entire Master Suite (all 13 community skills)
 $Skill = 'all'; irm https://tidyfactor.com/api/v1/install.ps1 | iex
 ```
 

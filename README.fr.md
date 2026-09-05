@@ -29,13 +29,14 @@ Le web a changé. L'intelligence artificielle a fondamentalement transformé la 
 
 ---
 
-## 🏛️ Ecosystem Architecture (12 Official Skills)
+## 🏛️ Ecosystem Architecture (13 Official Skills)
 
 ```
 TidyFactor Organization (github.com/TidyFactor)
 │
-├── 🏛️ Governance & Operations
-│   ├── Skill-Architect → Master Governance  (13 Structural Rules, Dispatcher Discipline & Quality Gate)
+├── 🏛️ Governance & Memory
+│   ├── Skill-Architect → Master Governance  (15 Structural Rules, CDL v2.0 & Quality Gate)
+│   ├── Brain           → Cognitive Memory OS(4-Tier Memory, Sovereign Switcher & MCP Server)
 │   └── GitHub          → Platform Intel     (Platform Operations, Rulesets, Actions CI & CX Engine)
 │
 ├── 🎨 Design Skills
@@ -67,24 +68,26 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ---
 
-## 📦 Skills Matrix & Direct Downloads
+## 📦 Skills Matrix & Mount Commands
 
-| Category | Skill Identifier | Quick CLI Installation | Direct Download (.skill) |
-| :--- | :--- | :--- | :---: |
-| **Governance** | `tidyfactor-skill-architect` | `npx @tidyfactor/cli-skill-architect add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Skill-Architect/releases/latest/download/tidyfactor-skill-architect.skill) |
-| **Operations** | `tidyfactor-github` | `npx @tidyfactor/cli-github add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/GitHub/releases/latest/download/tidyfactor-github.skill) |
-| **Design** | `tidyfactor-cinematic` | `npx @tidyfactor/cinematic add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Cinematic/releases/latest/download/tidyfactor-cinematic.skill) |
-| **Design** | `tidyfactor-design` | `npx @tidyfactor/cli-design add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Design/releases/latest/download/tidyfactor-design.skill) |
-| **Design** | `tidyfactor-styler` | `npx @tidyfactor/cli-styler add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Styler/releases/latest/download/tidyfactor-styler.skill) |
-| **Engineering** | `tidyfactor-html` | `npx @tidyfactor/cli-html add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTML/releases/latest/download/tidyfactor-html.skill) |
-| **Engineering** | `tidyfactor-next` | `npx @tidyfactor/cli-next add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Next/releases/latest/download/tidyfactor-next.skill) |
-| **Engineering** | `tidyfactor-htmx` | `npx @tidyfactor/cli-htmx add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/HTMX/releases/latest/download/tidyfactor-htmx.skill) |
-| **Engineering** | `tidyfactor-js` | `npx @tidyfactor/cli-js add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/JS/releases/latest/download/tidyfactor-js.skill) |
-| **Engineering** | `tidyfactor-php` | `npx @tidyfactor/cli-php add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/PHP/releases/latest/download/tidyfactor-php.skill) |
-| **Documentation** | `tidyfactor-doc` | `npx @tidyfactor/cli-doc add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Doc/releases/latest/download/tidyfactor-doc.skill) |
-| **Growth** | `tidyfactor-marketing` | `npx @tidyfactor/cli-marketing add-skill` | [⬇️ Download .skill](https://github.com/TidyFactor/Marketing/releases/latest/download/tidyfactor-marketing.skill) |
+| Category | Skill Identifier | Control Plane Mount Command |
+| :--- | :--- | :--- |
+| **Governance** | `tidyfactor-skill-architect` | `tf add skill-architect` |
+| **Governance** | `tidyfactor-brain` | `tf add brain` |
+| **Operations** | `tidyfactor-github` | `tf add github` |
+| **Design** | `tidyfactor-cinematic` | `tf add cinematic` |
+| **Design** | `tidyfactor-design` | `tf add design` |
+| **Design** | `tidyfactor-styler` | `tf add styler` |
+| **Engineering** | `tidyfactor-html` | `tf add html` |
+| **Engineering** | `tidyfactor-next` | `tf add next` |
+| **Engineering** | `tidyfactor-htmx` | `tf add htmx` |
+| **Engineering** | `tidyfactor-js` | `tf add js` |
+| **Engineering** | `tidyfactor-php` | `tf add php` |
+| **Documentation** | `tidyfactor-doc` | `tf add doc` |
+| **Growth** | `tidyfactor-marketing` | `tf add marketing` |
 
-> 📦 **TidyFactor Skills Suite Bundle**: [⬇️ Download Full Skills Suite (.zip)](https://github.com/TidyFactor/TidyFactor/releases/latest/download/tidyfactor-skills-suite.zip)
+> 💡 **Mount Full Master Suite (All 13 Engines)**: `tf add --all`  
+> *(For air-gapped or offline enterprise environments without Node.js, standalone `.skill` binaries remain accessible via [GitHub Releases](https://github.com/TidyFactor/TidyFactor/releases/latest)).*
 
 ---
 

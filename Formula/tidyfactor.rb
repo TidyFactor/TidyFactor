@@ -1,8 +1,8 @@
 class Tidyfactor < Formula
   desc "Universal AI Coding Agent Skill Ecosystem & Multi-Platform CLI"
   homepage "https://tidyfactor.com"
-  url "https://registry.npmjs.org/@tidyfactor/cli/-/cli-1.7.0.tgz"
-  sha256 "db1426e9700bd33041d37c1a8568c5177b470a7b10e1dc00dcf7cd8c77530770"
+  url "https://registry.npmjs.org/@tidyfactor/cli/-/cli-2.1.0.tgz"
+  sha256 "d3e1b40aca1da5de34c180e2af2cdbd52137370385501b0332500ee182302ad8"
   license "Apache-2.0"
 
   depends_on "node"
@@ -14,7 +14,7 @@ class Tidyfactor < Formula
 
   test do
     output = shell_output("#{bin}/tidyfactor --version")
-    assert_match "1.7.0", output
+    assert_match "2.1.0", output
 
     list_output = shell_output("#{bin}/tidyfactor list")
     assert_match "tidyfactor-cinematic", list_output

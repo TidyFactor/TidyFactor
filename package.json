@@ -1,6 +1,6 @@
 {
   "name": "@tidyfactor/cli",
-  "version": "1.7.0",
+  "version": "2.1.0",
   "description": "TidyFactor — Universal Architecture Ecosystem & Multi-Platform CLI for AI Agent Skills",
   "main": "bin/cli.js",
   "bin": {
@@ -35,12 +35,21 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "test": "node bin/cli.js --version && node bin/cli.js list"
+  },
   "files": [
     "bin",
     "MANIFEST.json",
     "DISTRIBUTION.md",
     "README.md",
     "README.ar.md",
+    "README.de.md",
+    "README.es.md",
+    "README.fa.md",
+    "README.fr.md",
+    "README.pt.md",
+    "README.zh.md",
     "LICENSE",
     "CHANGELOG.md"
   ]
