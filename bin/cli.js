@@ -22,19 +22,19 @@ const { execSync } = require('child_process');
 const readline = require('readline');
 const crypto = require('crypto');
 
-const VERSION = '2.1.1';
+const VERSION = '2.2.0';
 const REGISTRY_HOST = process.env.TIDYFACTOR_REGISTRY_HOST || 'tidyfactor.com';
 const REGISTRY_API_PATH = '/api/v1/skills';
 
-// ─── 13 Official Community Skills Matrix ──────────────────────────
+// ─── 14 Official Community Skills Matrix ──────────────────────────
 const COMMUNITY_SKILLS = [
   {
     id: 'tidyfactor-skill-architect',
     name: 'Skill Architect',
     nameAr: 'مهندس الحوكمة والمنهجية',
-    version: '2.6.0',
+    version: '2.7.1',
     category: 'governance',
-    desc: 'Master governance layer and methodology engine enforcing structural discipline & quality gates.',
+    desc: 'Master 14-rule governance layer and methodology engine enforcing structural discipline & quality gates.',
     descAr: 'طبقة الحوكمة الرئيسية ومحرك المنهجية المعمارية المنظم لهياكل المهارات وبوابات الجودة.',
     commands: ['/init', '/audit', '/test', '/grow', '/brief', '/learn'],
     tags: ['governance', 'standards', 'all']
@@ -87,11 +87,11 @@ const COMMUNITY_SKILLS = [
     id: 'tidyfactor-doc',
     name: 'Doc Platform',
     nameAr: 'منصة التوثيق ونشر المعرفة',
-    version: '1.5.0',
+    version: '1.10.0',
     category: 'documentation',
-    desc: 'Codebase documentation builder & dual-engine publishing platform (MkDocs Material & Docsify).',
-    descAr: 'محرك بناء توثيق الشيفرات والمنصات الثنائية (MkDocs Material و Docsify) مع استجواب الكود.',
-    commands: ['/init', '/collect', '/generate', '/site', '/mkdocs', '/docsify'],
+    desc: 'Codebase documentation builder, ADR generator, llms.txt standard & triple-engine publishing platform (VitePress, MkDocs Material & Docsify).',
+    descAr: 'محرك بناء توثيق الشيفرات ومعيار llms.txt والمنصات الثلاثية (VitePress و MkDocs Material و Docsify).',
+    commands: ['/init', '/collect', '/generate', '/adr', '/site', '/vitepress', '/mkdocs', '/docsify', '/audit', '/llms'],
     tags: ['docs', 'all', 'documentation']
   },
   {
@@ -109,10 +109,10 @@ const COMMUNITY_SKILLS = [
     id: 'tidyfactor-marketing',
     name: 'Marketing & SEO',
     nameAr: 'محرك التسويق والنمو وسيو',
-    version: '1.5.0',
+    version: '1.7.0',
     category: 'growth',
-    desc: 'AI Direct-response marketing, pillar-cluster SEO & multi-channel growth engine with CDL.',
-    descAr: 'محرك التسويق بالاستجابة المباشرة، وسيو العناقيد والمحاور، وحملات النمو عبر القنوات.',
+    desc: 'Generative Engine Optimization (GEO), AI Direct-response marketing, pillar-cluster SEO & MENA growth.',
+    descAr: 'تحسين محركات التوليد GEO، والتسويق بالاستجابة المباشرة، وسيو العناقيد والمحاور، وحملات النمو.',
     commands: ['/strategy', '/content', '/social', '/email', '/advertising', '/brief'],
     tags: ['marketing', 'seo', 'copywriting', 'growth']
   },
@@ -120,10 +120,10 @@ const COMMUNITY_SKILLS = [
     id: 'tidyfactor-html',
     name: 'Static Platform',
     nameAr: 'منصة الويب الثابتة فائقة السرعة',
-    version: '1.2.0',
+    version: '1.3.0',
     category: 'engineering',
-    desc: 'Content-first static HTML/CSS/JS platform starter for zero-server shared hosting and 100/100 SEO.',
-    descAr: 'منصة الويب الثابتة المبنية للاستضافات المجانية والمشتركة ونتائج 100/100 في معايير Lighthouse.',
+    desc: 'Content-first static HTML/CSS/JS platform with Agentic Browsing readiness & llms.txt discovery tag.',
+    descAr: 'منصة الويب الثابتة مع جاهزية التصفح التوليدي للوكلاء الذكياء ووسم اكتشاف llms.txt القياسي.',
     commands: ['/brief', '/init', '/compo', '/pages', '/assets', '/seo'],
     tags: ['html', 'static', 'vanilla', 'engineering']
   },
@@ -170,6 +170,17 @@ const COMMUNITY_SKILLS = [
     descAr: 'إدارة عمليات منصة GitHub، وقواعد الفروع Rulesets، ومسارات CI/CD، وتجربة المساهمين CX.',
     commands: ['/audit', '/oss', '/ruleset', '/readme', '/release', '/security'],
     tags: ['github', 'cicd', 'rulesets', 'operations']
+  },
+  {
+    id: 'tidyfactor-cleaner',
+    name: 'Cleaner & Workstation Hygiene',
+    nameAr: 'محرك تنظيف وتحسين محطة العمل',
+    version: '1.3.0',
+    category: 'hygiene',
+    desc: 'Universal developer workstation, IDE, framework cache & system hygiene engine with process lock resolution.',
+    descAr: 'محرك عام وعالمي لتنظيف وتحسين بيئات العمل، وحذف كاش أطر العمل، وحل إقفال العمليات بأمان تام.',
+    commands: ['/brief', '/ide', '/browser', '/devtools', '/agent'],
+    tags: ['hygiene', 'cleaner', 'storage', 'devtools', 'vscode', 'all']
   }
 ];
 

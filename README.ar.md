@@ -5,10 +5,10 @@
 **النواة الإدراكية السيادية، الطبقة المعمارية القطعية، ولوحة تحكم المطورين Control Plane (`tf`) لإدارة وتوجيه التعاون بين الإنسان والوكيل عبر 18+ بيئة برمجية ذكية.**
 
 [![Control Plane](https://img.shields.io/npm/v/@tidyfactor/cli.svg?style=for-the-badge&color=0284C7&logo=npm&label=لوحة%20التحكم%20(tf))](https://www.npmjs.com/package/@tidyfactor/cli)
-[![OS Release v2.1.0](https://img.shields.io/badge/إصدار%20النظام-v2.1.0-10B981.svg?style=for-the-badge&logo=github)](https://github.com/TidyFactor/TidyFactor/releases/latest)
+[![OS Release v2.2.0](https://img.shields.io/badge/إصدار%20النظام-v2.2.0-10B981.svg?style=for-the-badge&logo=github)](https://github.com/TidyFactor/TidyFactor/releases/latest)
 [![Zero Dependencies](https://img.shields.io/badge/التبعيات-0%20(Pure%20Node.js)-emerald.svg?style=for-the-badge&logo=node.js)](package.json)
 [![Agent Fabric](https://img.shields.io/badge/نسيج%20الوكلاء-18%2B%20بيئة%20مدعومة-orange.svg?style=for-the-badge)](#-نسيج-التشغيل-البيني-لوكلاء-الذكاء-الاصطناعي-18-بيئة)
-[![Cognitive Engines](https://img.shields.io/badge/المحركات-13%20مساراً%20إنتاجياً-purple.svg?style=for-the-badge)](#-محركات-القدرات-المعيارية-الـ-13-community-engines)
+[![Cognitive Engines](https://img.shields.io/badge/المحركات-14%20مساراً%20إنتاجياً-purple.svg?style=for-the-badge)](#%EF%B8%8F-محركات-القدرات-المعيارية-الـ-14-community-engines)
 
 [![Bilingual OS](https://img.shields.io/badge/نظام%20مزدوج-عربي%20%7C%20EN-06B6D4.svg?style=for-the-badge)](README.md)
 [![Interactive TUI](https://img.shields.io/badge/لوحة%20التحكم-RawMode%20TUI-amber.svg?style=for-the-badge)](#%EF%B8%8F-اختصارات-لوحة-التحكم-التفاعلية-في-الطرفية-tui)
@@ -52,7 +52,7 @@ tf use design "صمم واجهة هبوط داكنة فاخرة" | claude
   - [الطبقة 1: النواة الإدراكية وحوكمة الذاكرة السيادية (`tidyfactor-brain`)](#الطبقة-1-النواة-الإدراكية-وحوكمة-الذاكرة-السيادية-tidyfactor-brain)
   - [الطبقة 2: لوحة تحكم المطورين Control Plane (محرك `tf`)](#الطبقة-2-لوحة-تحكم-المطورين-control-plane-محرك-tf)
   - [الطبقة 3: طبقة الحوكمة المعمارية وبوابات الجودة (`tidyfactor-skill-architect`)](#الطبقة-3-طبقة-الحوكمة-المعمارية-وبوابات-الجودة-tidyfactor-skill-architect)
-  - [الطبقة 4: محركات القدرات المعيارية الـ 13](#الطبقة-4-محركات-القدرات-المعيارية-الـ-13)
+  - [الطبقة 4: محركات القدرات المعيارية الـ 14](#الطبقة-4-محركات-القدرات-المعيارية-الـ-14)
   - [الطبقة 5: نسيج التشغيل البيني للوكلاء عبر 18+ بيئة](#الطبقة-5-نسيج-التشغيل-البيني-للوكلاء-عبر-18-بيئة)
   - [الطبقة 6: السحابة السيادية ومستودع حلول المؤسسات BaaS](#الطبقة-6-السحابة-السيادية-ومستودع-حلول-المؤسسات-baas)
 - [⚡ التثبيت السريع عبر مختلف منصات التشغيل (Zero-Lockin)](#-التثبيت-السريع-عبر-مختلف-منصات-التشغيل-zero-lockin)
@@ -75,7 +75,7 @@ tf use design "صمم واجهة هبوط داكنة فاخرة" | claude
   - [11. `tf packs` و `tf list` (استعراض كتالوج المحركات)](#11-tf-packs-و-tf-list-استعراض-كتالوج-المحركات)
   - [12. `tf pro` (بوابة مهارات المؤسسات و DevOps)](#12-tf-pro-بوابة-مهارات-المؤسسات-و-devops)
 - [📦 باقات سير العمل الإنتاجية المنسقة (5 باقات معمارية)](#-باقات-سير-العمل-الإنتاجية-المنسقة-5-باقات-معمارية)
-- [🏛️ محركات القدرات المعيارية الـ 13 (Community Engines)](#%EF%B8%8F-محركات-القدرات-المعيارية-الـ-13-community-engines)
+- [🏛️ محركات القدرات المعيارية الـ 14 (Community Engines)](#%EF%B8%8F-محركات-القدرات-المعيارية-الـ-14-community-engines)
 - [🤖 نسيج التشغيل البيني لوكلاء الذكاء الاصطناعي (18+ بيئة)](#-نسيج-التشغيل-البيني-لوكلاء-الذكاء-الاصطناعي-18-بيئة)
 - [🛡️ معيار حوكمة ملف القفل (`.tidyfactor/skills.lock`)](#%EF%B8%8F-معيار-حوكمة-ملف-القفل-tidyfactorskillslock)
 - [💼 منظومة المؤسسات وحاضنة منتجات الوكالة (Alwkala Foundry)](#-منظومة-المؤسسات-وحاضنة-منتجات-الوكالة-alwkala-foundry)
@@ -135,8 +135,8 @@ graph TD
         OtherAgents[Copilot, RooCode, Codex, KiloCode, Warp, Zed...]
     end
 
-    subgraph Layer4 ["الطبقة 4: محركات القدرات المعيارية الـ 13"]
-        GovEngines["الحوكمة: مهندس المهارات، العقل Brain، جتهب"]
+    subgraph Layer4 ["الطبقة 4: محركات القدرات المعيارية الـ 14"]
+        GovEngines["الحوكمة والنظافة: مهندس المهارات، العقل Brain، جتهب، المنظف Cleaner"]
         DesignEngines["التجربة والواجهات: السينمائي، استوديو التصميم، صقل العربية"]
         CoreRuntimes["بيئات التشغيل: Next.js ساس، مونوليث PHP، تفاعلية HTMX، تطبيقات Vanilla JS، المواقع الثابتة"]
         DocGrowth["المعرفة والنمو: منصة التوثيق، التسويق وسيو"]
@@ -190,21 +190,22 @@ graph TD
 - **مصفوفة بوابات الجودة ومنع الهراء البرمجي**: 50+ قاعدة حظر قاطعة تلغي الأنماط الرخيصة لتوليد الذكاء الاصطناعي.
 - **الختم النقدي سباعي المحاور (7-Axis Audit)**: فحص كل سطر كود قبل اعتماده عبر: الأداء (P)، النظافة (H)، الأناقة (E)، الأمان (S)، دعم العربية (R)، الصرامة البصرية (V)، والتوافق مع القرارات (D).
 
-### الطبقة 4: محركات القدرات المعيارية الـ 13
-13 مساراً معمارياً ذاتي الاحتواء تغطي دورة حياة إنتاج البرمجيات بالكامل:
-1. **`tidyfactor-skill-architect`** — محرك الحوكمة والمنهجية المعمارية وضبط جودة المهارات.
+### الطبقة 4: محركات القدرات المعيارية الـ 14
+14 مساراً معمارياً ذاتي الاحتواء تغطي دورة حياة إنتاج البرمجيات بالكامل:
+1. **`tidyfactor-skill-architect`** — محرك الحوكمة والمنهجية المعمارية وفق القواعد الـ 14 وضبط جودة المهارات.
 2. **`tidyfactor-brain`** — نظام التشغيل الإدراكي، حوكمة الذاكرة رباعية المستويات، وخادم MCP السيادي.
-3. **`tidyfactor-github`** — إدارة عمليات منصة GitHub، وقواعد الفروع، وأتمتة CI الآمنة وتجربة المساهمين CX.
-4. **`tidyfactor-cinematic`** — صفحات هبوط سينمائية فاخرة بتأثيرات التمرير وسلاسل الإطارات بجماليات Apple و Cartier.
-5. **`tidyfactor-design`** — محرك النماذج الأولية التفاعلية بالكود وبديل فيغما المباشر لأنظمة التصميم واللوحات.
-6. **`tidyfactor-styler`** — محرك الصقل البصري الجراحي ودعم العربية الكامل عبر Next.js و PHP و Vanilla.
-7. **`tidyfactor-next`** — محرك منصات ساس متعددة المستأجرين على Next.js 16 و React 19 و Supabase RLS.
-8. **`tidyfactor-php`** — مونوليث PHP 8.x معياري حديث وسريع مع محرك إضافات ديناميكي وصلاحيات RBAC.
-9. **`tidyfactor-htmx`** — محرك التفاعل الفائق المعتمد على الخادم متكامل مع بيئات PHP و Node و Python.
-10. **`tidyfactor-js`** — تطبيقات ويب أحادية تفاعلية بدون أطر عمل مع توجيه محلي وإدارة حالة بالبروكسي.
-11. **`tidyfactor-html`** — منصة ويب ثابتة فائقة السرعة بنسبة 100% دون خادم مع مكونات ويب قياسية.
-12. **`tidyfactor-doc`** — محرك توثيق الشيفرات والمنصات الثنائية (MkDocs Material و Docsify) مع استجواب الكود.
-13. **`tidyfactor-marketing`** — محرك التسويق بالاستجابة المباشرة، وسيو العناقيد والمحاور، وحملات النمو الإقليمية.
+3. **`tidyfactor-cleaner`** — محرك تنظيف وتحسين محطات العمل وبيئات المطورين وإلغاء إقفال العمليات بأمان.
+4. **`tidyfactor-github`** — إدارة عمليات منصة GitHub، وقواعد الفروع، وأتمتة CI الآمنة وتجربة المساهمين CX.
+5. **`tidyfactor-cinematic`** — صفحات هبوط سينمائية فاخرة بتأثيرات التمرير وسلاسل الإطارات بجماليات Apple و Cartier.
+6. **`tidyfactor-design`** — محرك النماذج الأولية التفاعلية بالكود وبديل فيغما المباشر لأنظمة التصميم واللوحات.
+7. **`tidyfactor-styler`** — محرك الصقل البصري الجراحي، وتوليد تباينات CVA، ودعم العربية الكامل RTL.
+8. **`tidyfactor-next`** — محرك منصات ساس متعددة المستأجرين على Next.js 16 و React 19 و Supabase RLS.
+9. **`tidyfactor-php`** — مونوليث PHP 8.x معياري حديث وسريع مع محرك إضافات ديناميكي وصلاحيات RBAC.
+10. **`tidyfactor-htmx`** — محرك التفاعل الفائق المعتمد على الخادم متكامل مع بيئات PHP و Node و Python.
+11. **`tidyfactor-js`** — تطبيقات ويب أحادية تفاعلية بدون أطر عمل مع توجيه محلي وإدارة حالة بالبروكسي.
+12. **`tidyfactor-html`** — منصة ويب ثابتة فائقة السرعة مع جاهزية التصفح التوليدي للوكلاء واكتشاف llms.txt.
+13. **`tidyfactor-doc`** — محرك توثيق الشيفرات، وتوليد ADR، ومعيار llms.txt، والمنصات الثلاثية (VitePress, MkDocs, Docsify).
+14. **`tidyfactor-marketing`** — محرك تحسين محركات التوليد (GEO)، والتسويق بالاستجابة المباشرة، ونمو أسواق المنطقة العربية.
 
 ### الطبقة 5: نسيج التشغيل البيني للوكلاء عبر 18+ بيئة
 القضاء التام على الانغلاق التجاري لأي منصة. أمر واحد يسلح أي بيئة عمل في ثوانٍ:
@@ -497,27 +498,28 @@ tf pro
 
 ---
 
-## 🏛️ محركات القدرات المعيارية الـ 13 (Community Engines)
+## 🏛️ محركات القدرات المعيارية الـ 14 (Community Engines)
 
 كافة محركات المجتمع مفتوحة المصدر (ترخيص Apache-2.0)، ذاتية الاحتواء، وتخضع لـ **معيار التثبيت الثلاثي**:
 
 | التصنيف | معرّف المحرك | الإصدار | أوامر الـ Slash الأساسية | أمر التركيب الفوري عبر لوحة التحكم |
 | :--- | :--- | :---: | :--- | :--- |
-| **الحوكمة** | `tidyfactor-skill-architect` | `v2.6.0` | `/init`, `/audit`, `/test`, `/grow`, `/brief`, `/learn` | `tf add skill-architect` |
+| **الحوكمة** | `tidyfactor-skill-architect` | `v2.7.1` | `/init`, `/audit`, `/test`, `/grow`, `/brief`, `/learn` | `tf add skill-architect` |
 | **الحوكمة** | `tidyfactor-brain` | `v3.0.0` | `/brief`, `/context`, `/switch`, `/hygiene`, `/recall`, `/firewall` | `tf add brain` |
+| **النظافة** | `tidyfactor-cleaner` | `v1.3.0` | `/brief`, `/ide`, `/browser`, `/devtools`, `/agent` | `tf add cleaner` |
 | **العمليات** | `tidyfactor-github` | `v1.3.1` | `/audit`, `/oss`, `/ruleset`, `/readme`, `/release`, `/security` | `tf add github` |
 | **التصميم** | `tidyfactor-cinematic` | `v3.6.0` | `/film`, `/brand`, `/hero`, `/theme`, `/perf`, `/brief` | `tf add cinematic` |
 | **التصميم** | `tidyfactor-design` | `v1.10.0` | `/study`, `/brief`, `/tokens`, `/palette`, `/layout`, `/dashboard` | `tf add design` |
-| **التصميم** | `tidyfactor-styler` | `v1.4.0` | `/component`, `/section`, `/redesign`, `/rtl`, `/motion`, `/brief` | `tf add styler` |
+| **التصميم** | `tidyfactor-styler` | `v1.4.1` | `/component`, `/section`, `/redesign`, `/rtl`, `/motion`, `/brief` | `tf add styler` |
 | **الهندسة** | `tidyfactor-next` | `v1.4.0` | `/brief`, `/init`, `/tenant`, `/rls`, `/auth`, `/api` | `tf add next` |
 | **الهندسة** | `tidyfactor-php` | `v1.2.0` | `/brief`, `/init`, `/admin`, `/plugins`, `/themes`, `/rbac` | `tf add php` |
 | **الهندسة** | `tidyfactor-htmx` | `v1.2.0` | `/brief`, `/init`, `/fragments`, `/swap`, `/triggers`, `/forms` | `tf add htmx` |
 | **الهندسة** | `tidyfactor-js` | `v1.2.0` | `/brief`, `/init`, `/store`, `/compo`, `/route`, `/pages` | `tf add js` |
-| **الهندسة** | `tidyfactor-html` | `v1.2.0` | `/brief`, `/init`, `/compo`, `/pages`, `/assets`, `/seo` | `tf add html` |
-| **التوثيق** | `tidyfactor-doc` | `v1.5.0` | `/init`, `/collect`, `/generate`, `/site`, `/mkdocs`, `/docsify` | `tf add doc` |
-| **النمو** | `tidyfactor-marketing` | `v1.5.0` | `/strategy`, `/content`, `/social`, `/email`, `/advertising`, `/brief` | `tf add marketing` |
+| **الهندسة** | `tidyfactor-html` | `v1.3.0` | `/brief`, `/init`, `/compo`, `/pages`, `/assets`, `/seo` | `tf add html` |
+| **التوثيق** | `tidyfactor-doc` | `v1.10.0` | `/init`, `/collect`, `/generate`, `/adr`, `/site`, `/vitepress`, `/llms` | `tf add doc` |
+| **النمو** | `tidyfactor-marketing` | `v1.7.0` | `/strategy`, `/content`, `/social`, `/email`, `/advertising`, `/brief` | `tf add marketing` |
 
-> 💡 **تركيب الجناح المعماري الكامل (كافة الـ 13 محركاً)**: `tf add --all`  
+> 💡 **تركيب الجناح المعماري الكامل (كافة الـ 14 محركاً)**: `tf add --all`  
 > *(للبيئات المعزولة أو الخوادم المغلقة دون Node.js، تظل الحزم الخام بصيغة `.skill` متاحة للتحميل اليدوي عبر [إصدارات GitHub الرسمية](https://github.com/TidyFactor/TidyFactor/releases/latest)).*
 
 ---

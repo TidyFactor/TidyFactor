@@ -5,10 +5,10 @@
 **The unified cognitive kernel, deterministic architectural layer, and developer control plane (`tf`) orchestrating Human-Agent Collaboration across 18+ AI Coding Environments.**
 
 [![Control Plane](https://img.shields.io/npm/v/@tidyfactor/cli.svg?style=for-the-badge&color=0284C7&logo=npm&label=Control%20Plane%20(tf))](https://www.npmjs.com/package/@tidyfactor/cli)
-[![OS Release v2.1.0](https://img.shields.io/badge/OS%20Release-v2.1.0-10B981.svg?style=for-the-badge&logo=github)](https://github.com/TidyFactor/TidyFactor/releases/latest)
+[![OS Release v2.2.0](https://img.shields.io/badge/OS%20Release-v2.2.0-10B981.svg?style=for-the-badge&logo=github)](https://github.com/TidyFactor/TidyFactor/releases/latest)
 [![Zero-Dependency Runtime](https://img.shields.io/badge/Runtime-0%20Deps%20(Pure%20Node.js)-emerald.svg?style=for-the-badge&logo=node.js)](package.json)
 [![Agent Fabric](https://img.shields.io/badge/Agent%20Fabric-18%2B%20IDEs%20Mounted-orange.svg?style=for-the-badge)](#-the-agent-interoperability-fabric-18-ides)
-[![Cognitive Engines](https://img.shields.io/badge/Engines-13%20Production%20Tracks-purple.svg?style=for-the-badge)](#-the-13-modular-domain-engines)
+[![Cognitive Engines](https://img.shields.io/badge/Engines-14%20Production%20Tracks-purple.svg?style=for-the-badge)](#%EF%B8%8F-the-14-modular-domain-capability-engines)
 
 [![Bilingual OS](https://img.shields.io/badge/Bilingual%20OS-EN%20%7C%20AR%20(%D8%B9%D8%B1%D8%A8%D9%8A)-06B6D4.svg?style=for-the-badge)](README.ar.md)
 [![Interactive TUI](https://img.shields.io/badge/Control%20Plane-RawMode%20TUI-amber.svg?style=for-the-badge)](#%EF%B8%8F-control-plane-keyboard-shortcuts)
@@ -52,7 +52,7 @@ tf use design "Build a luxury dark hero section" | claude
   - [Layer 1: Cognitive Memory & Governance Kernel (`tidyfactor-brain`)](#layer-1-cognitive-memory--governance-kernel-tidyfactor-brain)
   - [Layer 2: Developer Control Plane (`tf` CLI Engine)](#layer-2-developer-control-plane-tf-cli-engine)
   - [Layer 3: The Architectural Governance Layer (`tidyfactor-skill-architect`)](#layer-3-the-architectural-governance-layer-tidyfactor-skill-architect)
-  - [Layer 4: The 13 Modular Domain Capability Engines](#layer-4-the-13-modular-domain-capability-engines)
+  - [Layer 4: The 14 Modular Domain Capability Engines](#layer-4-the-14-modular-domain-capability-engines)
   - [Layer 5: The Agent Interoperability Fabric (18+ IDEs)](#layer-5-the-agent-interoperability-fabric-18-ides)
   - [Layer 6: Sovereign Multi-Tenant BaaS & Enterprise Cloud](#layer-6-sovereign-multi-tenant-baas--enterprise-cloud)
 - [⚡ Quick Multi-Platform Installation (Zero-Lockin)](#-quick-multi-platform-installation-zero-lockin)
@@ -75,7 +75,7 @@ tf use design "Build a luxury dark hero section" | claude
   - [11. `tf packs` & `tf list` (Engine & Catalog Inspection)](#11-tf-packs--tf-list-engine--catalog-inspection)
   - [12. `tf pro` (Enterprise DevOps & PocketOffice Gateway)](#12-tf-pro-enterprise-devops--pocketoffice-gateway)
 - [📦 Curated Production Workflow Packs (5 Core Suites)](#-curated-production-workflow-packs-5-core-suites)
-- [🏛️ The 13 Modular Domain Capability Engines](#%EF%B8%8F-the-13-modular-domain-capability-engines)
+- [🏛️ The 14 Modular Domain Capability Engines](#%EF%B8%8F-the-14-modular-domain-capability-engines)
 - [🤖 The Agent Interoperability Fabric (18+ IDEs)](#-the-agent-interoperability-fabric-18-ides)
 - [🛡️ Governance Lockfile Specification (`.tidyfactor/skills.lock`)](#%EF%B8%8F-governance-lockfile-specification-tidyfactorskillslock)
 - [💼 Enterprise Pro Ecosystem & Alwkala Product Foundry](#-enterprise-pro-ecosystem--alwkala-product-foundry)
@@ -135,8 +135,8 @@ graph TD
         OtherAgents[Copilot, RooCode, Codex, KiloCode, Warp, Zed...]
     end
 
-    subgraph Layer4 ["Layer 4: Modular Domain Capability Engines (13 Core Tracks)"]
-        GovEngines["Governance: Skill-Architect, Brain, GitHub"]
+    subgraph Layer4 ["Layer 4: Modular Domain Capability Engines (14 Core Tracks)"]
+        GovEngines["Governance & Hygiene: Skill-Architect, Brain, GitHub, Cleaner"]
         DesignEngines["Visual/UX: Cinematic, Design, Styler"]
         CoreRuntimes["Core Runtimes: Next.js, PHP Monolith, HTMX, Vanilla JS, Static HTML"]
         DocGrowth["Knowledge: Doc Platform, Marketing & SEO"]
@@ -190,21 +190,22 @@ The constitution of the operating system:
 - **Anti-Slop Quality Gate Matrix**: 50+ categorical binary prohibitions banning AI tropes (generic purple gradients, unstated low-contrast grays, arbitrary margins).
 - **7-Axis Pre-Emit Critique Stamps**: Evaluates all code before delivery across Performance (P), Hygiene (H), Elegance (E), Security (S), RTL/i18n (R), Visual Rigor (V), and Decision Alignment (D).
 
-### Layer 4: The 13 Modular Domain Capability Engines
-Thirteen self-contained, deterministic capability tracks covering the full software production lifecycle:
-1. **`tidyfactor-skill-architect`** — Master Governance Layer & Methodology Engine.
+### Layer 4: The 14 Modular Domain Capability Engines
+Fourteen self-contained, deterministic capability tracks covering the full software production lifecycle:
+1. **`tidyfactor-skill-architect`** — Master 14-Rule Governance Layer & Methodology Engine.
 2. **`tidyfactor-brain`** — Cognitive OS, 4-Tier Memory Governance & Native Stdio MCP Server.
-3. **`tidyfactor-github`** — GitHub Platform Operations, Rulesets, SHA-pinned Actions CI & CX Intelligence.
-4. **`tidyfactor-cinematic`** — Luxury Scroll-Driven Landing Pages (Apple x Cartier aesthetic) & Canvas Sequences.
-5. **`tidyfactor-design`** — Code-Native Interactive Prototyping & Figma Alternative for Design Systems with CDL.
-6. **`tidyfactor-styler`** — Production Framework Styler & Surgical RTL Polish Engine (Next.js, PHP, Vanilla).
-7. **`tidyfactor-next`** — Multi-Tenant SaaS Engine on Next.js 16, React 19, TypeScript strict, and Supabase RLS.
-8. **`tidyfactor-php`** — Modern Server-Rendered PHP 8.x Modular Monolith (Flight + Medoo + Plates) with RBAC.
-9. **`tidyfactor-htmx`** — Server-Driven Hypermedia Interactivity Engine paired with PHP, Node, or Python.
-10. **`tidyfactor-js`** — Framework-Free Reactive Vanilla SPA with client routing and Proxy state.
-11. **`tidyfactor-html`** — 100% Static HTML5 Platform Starter with Web Components and zero server runtime.
-12. **`tidyfactor-doc`** — Codebase Documentation Builder & Dual-Engine Publishing (MkDocs Material & Docsify).
-13. **`tidyfactor-marketing`** — AI Direct-Response Marketing, Pillar-Cluster SEO & Multi-Channel Growth Engine.
+3. **`tidyfactor-cleaner`** — Universal Developer Workstation, IDE & System Hygiene Engine with Lock Resolution.
+4. **`tidyfactor-github`** — GitHub Platform Operations, Rulesets, SHA-pinned Actions CI & CX Intelligence.
+5. **`tidyfactor-cinematic`** — Luxury Scroll-Driven Landing Pages (Apple x Cartier aesthetic) & Canvas Sequences.
+6. **`tidyfactor-design`** — Code-Native Interactive Prototyping & Figma Alternative for Design Systems with CDL.
+7. **`tidyfactor-styler`** — Production Framework Styler, CVA Variants & Surgical RTL Polish Engine (Next.js, PHP, Vanilla).
+8. **`tidyfactor-next`** — Multi-Tenant SaaS Engine on Next.js 16, React 19, TypeScript strict, and Supabase RLS.
+9. **`tidyfactor-php`** — Modern Server-Rendered PHP 8.x Modular Monolith (Flight + Medoo + Plates) with RBAC.
+10. **`tidyfactor-htmx`** — Server-Driven Hypermedia Interactivity Engine paired with PHP, Node, or Python.
+11. **`tidyfactor-js`** — Framework-Free Reactive Vanilla SPA with client routing and Proxy state.
+12. **`tidyfactor-html`** — 100% Static HTML5 Platform with Agentic Browsing readiness & llms.txt discovery tag.
+13. **`tidyfactor-doc`** — Codebase Documentation Builder, ADR Generator, llms.txt & Triple-Publishing (VitePress, MkDocs & Docsify).
+14. **`tidyfactor-marketing`** — Generative Engine Optimization (GEO), AI Direct-Response & MENA Intelligence Growth Engine.
 
 ### Layer 5: The Agent Interoperability Fabric (18+ IDEs)
 Eliminates proprietary vendor lock-in. A single command equips any IDE:
@@ -497,27 +498,28 @@ tf pro
 
 ---
 
-## 🏛️ The 13 Modular Domain Capability Engines
+## 🏛️ The 14 Modular Domain Capability Engines
 
 Every community engine is open-source (Apache-2.0), self-contained, and follows the **3-Tier Installation Standard**:
 
 | Category | Engine Identifier | Version | Primary Slash Commands | Control Plane Mount Command |
 | :--- | :--- | :---: | :--- | :--- |
-| **Governance** | `tidyfactor-skill-architect` | `v2.6.0` | `/init`, `/audit`, `/test`, `/grow`, `/brief`, `/learn` | `tf add skill-architect` |
+| **Governance** | `tidyfactor-skill-architect` | `v2.7.1` | `/init`, `/audit`, `/test`, `/grow`, `/brief`, `/learn` | `tf add skill-architect` |
 | **Governance** | `tidyfactor-brain` | `v3.0.0` | `/brief`, `/context`, `/switch`, `/hygiene`, `/recall`, `/firewall` | `tf add brain` |
+| **Hygiene** | `tidyfactor-cleaner` | `v1.3.0` | `/brief`, `/ide`, `/browser`, `/devtools`, `/agent` | `tf add cleaner` |
 | **Operations** | `tidyfactor-github` | `v1.3.1` | `/audit`, `/oss`, `/ruleset`, `/readme`, `/release`, `/security` | `tf add github` |
 | **Design** | `tidyfactor-cinematic` | `v3.6.0` | `/film`, `/brand`, `/hero`, `/theme`, `/perf`, `/brief` | `tf add cinematic` |
 | **Design** | `tidyfactor-design` | `v1.10.0` | `/study`, `/brief`, `/tokens`, `/palette`, `/layout`, `/dashboard` | `tf add design` |
-| **Design** | `tidyfactor-styler` | `v1.4.0` | `/component`, `/section`, `/redesign`, `/rtl`, `/motion`, `/brief` | `tf add styler` |
+| **Design** | `tidyfactor-styler` | `v1.4.1` | `/component`, `/section`, `/redesign`, `/rtl`, `/motion`, `/brief` | `tf add styler` |
 | **Engineering** | `tidyfactor-next` | `v1.4.0` | `/brief`, `/init`, `/tenant`, `/rls`, `/auth`, `/api` | `tf add next` |
 | **Engineering** | `tidyfactor-php` | `v1.2.0` | `/brief`, `/init`, `/admin`, `/plugins`, `/themes`, `/rbac` | `tf add php` |
 | **Engineering** | `tidyfactor-htmx` | `v1.2.0` | `/brief`, `/init`, `/fragments`, `/swap`, `/triggers`, `/forms` | `tf add htmx` |
 | **Engineering** | `tidyfactor-js` | `v1.2.0` | `/brief`, `/init`, `/store`, `/compo`, `/route`, `/pages` | `tf add js` |
-| **Engineering** | `tidyfactor-html` | `v1.2.0` | `/brief`, `/init`, `/compo`, `/pages`, `/assets`, `/seo` | `tf add html` |
-| **Documentation** | `tidyfactor-doc` | `v1.5.0` | `/init`, `/collect`, `/generate`, `/site`, `/mkdocs`, `/docsify` | `tf add doc` |
-| **Growth** | `tidyfactor-marketing` | `v1.5.0` | `/strategy`, `/content`, `/social`, `/email`, `/advertising`, `/brief` | `tf add marketing` |
+| **Engineering** | `tidyfactor-html` | `v1.3.0` | `/brief`, `/init`, `/compo`, `/pages`, `/assets`, `/seo` | `tf add html` |
+| **Documentation** | `tidyfactor-doc` | `v1.10.0` | `/init`, `/collect`, `/generate`, `/adr`, `/site`, `/vitepress`, `/llms` | `tf add doc` |
+| **Growth** | `tidyfactor-marketing` | `v1.7.0` | `/strategy`, `/content`, `/social`, `/email`, `/advertising`, `/brief` | `tf add marketing` |
 
-> 💡 **Mount Full Master Suite (All 13 Engines)**: `tf add --all`  
+> 💡 **Mount Full Master Suite (All 14 Engines)**: `tf add --all`  
 > *(For air-gapped or offline enterprise environments without Node.js, standalone `.skill` binaries remain accessible via [GitHub Releases](https://github.com/TidyFactor/TidyFactor/releases/latest)).*
 
 ---

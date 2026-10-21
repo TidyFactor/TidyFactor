@@ -1,5 +1,33 @@
 # CHANGELOG — TidyFactor Skills Suite & CLI
 
+## TidyFactor Skills Suite & CLI v2.2.0 (2026-10-22)
+
+Major ecosystem feature release introducing the **TidyFactor Cleaner** engine, upgrading to 14 core tracks, updating all community engines to latest production baselines, and synchronizing multi-agent governance across the entire ecosystem.
+
+### 🏛️ Key Additions & Ecosystem Upgrades
+- **🧹 TidyFactor Cleaner v1.3.0 (`tidyfactor-cleaner`)**:
+  - Added the 14th official community capability track: Universal Developer Workstation, IDE & System Hygiene Engine.
+  - Sub-second non-blocking diagnostic triage via Robocopy summary and POSIX `find -prune`.
+  - Semantic IDE extension deduplication, process lock resolution (`gopls`, `tsserver`, `codex-code-mode-host`), and safe multi-profile browser cache extraction preserving auth credentials.
+  - Universal 4-Tier Project Safety Matrix protecting local AI model weights (`.gguf`, `.safetensors`), `.env` secrets, and repositories.
+- **📚 TidyFactor Doc v1.10.0 (`tidyfactor-doc`)**:
+  - Integrated `llms.txt` standard generator and discovery headers for AI coding agents.
+  - Added Architectural Decision Records (ADR) generator and triple-engine publishing support (VitePress, MkDocs Material, Docsify).
+- **📈 TidyFactor Marketing v1.7.0 (`tidyfactor-marketing`)**:
+  - Integrated Generative Engine Optimization (GEO) and AI citation strategy.
+  - Added 6-axis periodic review protocol and YAML primacy (`brand.yaml`).
+- **🌐 TidyFactor HTML v1.3.0 (`tidyfactor-html`)**:
+  - Added Agentic Browsing readiness and `llms.txt` discovery tag injection.
+- **🎨 TidyFactor Styler v1.4.1 (`tidyfactor-styler`)**:
+  - CVA component variant architecture and surgical RTL logical CSS property enforcement.
+- **🛡️ Master Governance v2.7.1 (`tidyfactor-skill-architect`)**:
+  - Enforced 14-rule structural governance and automated CI validation across all ecosystem skills.
+- **⚡ Control Plane & Matrix Synchronization**:
+  - Updated `MANIFEST.json`, `COMMUNITY_SKILLS`, and `package.json` to v2.2.0.
+  - Expanded `COMMUNITY_SKILLS` catalog to 14 production capability engines.
+
+---
+
 ## TidyFactor Skills Suite & CLI v2.1.1 (2026-09-05)
 
 Maintenance and ecosystem synchronization release addressing audit findings across CLI command line argument parsing, Windows archive extraction, NTFS junction safety, and cross-suite skill metadata.
